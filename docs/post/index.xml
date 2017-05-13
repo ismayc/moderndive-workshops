@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ModernDive Workshops</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Posts on ModernDive Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Week 14 - Tuesday</title>
+      <link>/2017/05/02/week-14---tuesday/</link>
+      <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/02/week-14---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week14t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go over &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps13&#34;&gt;PS13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Discuss similarities between confidence intervals and hypothesis testing&lt;/li&gt;
+&lt;li&gt;Talk about Quiz #5 on Tuesday, May 9 during class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A reminder that we will NOT meet on Thursday, May 4&lt;/li&gt;
+&lt;li&gt;Work on the [Practice Problems for Quiz #5]() [TO BE POSTED]&lt;/li&gt;
+&lt;li&gt;Work through the final from last semester
+
+&lt;ul&gt;
+&lt;li&gt;Available via Slack&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 13 - Thursday</title>
+      <link>/2017/04/27/week-13---thursday/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/27/week-13---thursday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week13th&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quiz #4 over Chapters 6 and 7 of ModernDive&lt;/li&gt;
+&lt;li&gt;Discuss 538 articles on &lt;em&gt;p&lt;/em&gt;-hacking and &lt;em&gt;p&lt;/em&gt;-values&lt;/li&gt;
+&lt;li&gt;Talk about bootstrapping and confidence intervals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read all of Chapter 8 of &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/8-ci.html&#34;&gt;ModernDive&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I will ask you at the beginning of class on Tuesday to provide the definition of &lt;em&gt;confidence interval&lt;/em&gt; and &lt;em&gt;standard error&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps13&#34;&gt;PS13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 13 - Tuesday</title>
+      <link>/2017/04/25/week-13---tuesday/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/25/week-13---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week13t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Converse about the 538 articles from PS10 and PS11 in groups and as a class&lt;/li&gt;
+&lt;li&gt;Go over laying out the &amp;ldquo;There is Only One Test&amp;rdquo; hypothesis testing framework for a Two Sample Independent Means problem&lt;/li&gt;
+&lt;li&gt;Briefly talk about traditional hypothesis testing and the assumptions required&lt;/li&gt;
+&lt;li&gt;Discuss ANOVA and its similarities to a Two-Sample Independent t-test&lt;/li&gt;
+&lt;li&gt;Discuss Chi-square and its similarities to a Two-Sample Proportions test&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work on completing the &amp;ldquo;There is Only One Test&amp;rdquo; diagram for all of the five problems we discussed in class on Thursday&lt;/li&gt;
+&lt;li&gt;Study for Quiz 4 on Thursday over Chapters 6-7 of ModernDive
+
+&lt;ul&gt;
+&lt;li&gt;Work through the &lt;a href=&#34;https://docs.google.com/a/pacificu.edu/document/d/14XJgCJOt-F1LAxmG2PPeJJ0G5nzSWJ4ead-V76EvoNw/edit?usp=sharing&#34;&gt;Practice Problems for Quiz 4&lt;/a&gt;.  You can enter your answers &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSc_T347p5TTXoitdVU74Vf56JfEjPN-42EC2vqnWxBVFmW0BA/viewform?usp=sf_link&#34;&gt;here&lt;/a&gt; and you can check your answers as many times as you like.&lt;/li&gt;
+&lt;li&gt;The quiz will be ten questions long and will be a subset of the questions in the Practice Problems for Quiz 4&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 12 - Thursday</title>
+      <link>/2017/04/20/week-12---thursday/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/20/week-12---thursday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week12th&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go over examples of problem identification and Hypothesis Testing&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps12&#34;&gt;Problem Set 12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work on completing the &amp;ldquo;There is Only One Test&amp;rdquo; diagram for all of the five problems we discussed in class today&lt;/li&gt;
+&lt;li&gt;Read &lt;a href=&#34;http://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/&#34;&gt;this article&lt;/a&gt; about &lt;em&gt;p&lt;/em&gt;-hacking from 538
+
+&lt;ul&gt;
+&lt;li&gt;Summarize the main findings from the article and how it relates to the content in Chapter 7 of ModernDive in 3-5 paragraphs&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Create AT LEAST five multiple choice questions covering Chapters 6 and 7 of &lt;a href=&#34;http://moderndive.com&#34;&gt;ModernDive&lt;/a&gt;.
+
+&lt;ul&gt;
+&lt;li&gt;Create a Google Doc with your questions and share with isma5720@pacificu.edu&lt;/li&gt;
+&lt;li&gt;Please follow the layout I have provided in the Sample Question Layout document &lt;a href=&#34;https://docs.google.com/a/pacificu.edu/document/d/1QrhQl_R5YrYSPNyx8WxTFesYZvSARN_TDGzmD6HeMvQ/edit?usp=sharing&#34;&gt;here&lt;/a&gt;.  Copy over the content of this document into a new Google Doc and then enter your questions.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Each question should have four possible answers.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t mark what you choose to be the correct answer on what you turn in, but make note of your choice elsewhere to facilitate your learning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Please use Courier New font for all pieces of R code.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 12 - Tuesday</title>
+      <link>/2017/04/18/week-12---tuesday/</link>
+      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/18/week-12---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week12t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discuss &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps10&#34;&gt;Problem Set 10&lt;/a&gt; in pairs&lt;/li&gt;
+&lt;li&gt;Go over example of Hypothesis Testing&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps11&#34;&gt;Problem Set 11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/7-hypo.html&#34;&gt;all of Chapter 7&lt;/a&gt; of ModernDive&lt;/li&gt;
+&lt;li&gt;Finish &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps11&#34;&gt;Problem Set 11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Come prepared to discuss the articles and the examples in &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/7-hypo.html#example-revisiting-the-lady-tasting-tea&#34;&gt;Section 7.6&lt;/a&gt; and &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/7-hypo.html#example-comparing-two-means&#34;&gt;Section 7.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Note that &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/7-hypo.html#theory-hypo&#34;&gt;Section 7.8&lt;/a&gt; shows how to use
+the ideas from Chapter 7 to more &amp;ldquo;traditional&amp;rdquo; hypothesis testing procedures
+
+&lt;ul&gt;
+&lt;li&gt;There are complete worked out examples using randomization and traditional methods in ModernDive &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/B-appendixB.html&#34;&gt;Appendix B&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 11 - Thursday</title>
+      <link>/2017/04/13/week-11---thursday/</link>
+      <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/13/week-11---thursday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week11th&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reviewed Midterm Exam&lt;/li&gt;
+&lt;li&gt;Discussed functions in the &lt;code&gt;mosaic&lt;/code&gt; package&lt;/li&gt;
+&lt;li&gt;Talked about the Lady Tasting Tea example to motivate simulation&lt;/li&gt;
+&lt;li&gt;Worked on and turned in &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps10&#34;&gt;Problem Set 10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/7-hypo.html&#34;&gt;Sections 7.1 - 7.5&lt;/a&gt; of ModernDive&lt;/li&gt;
+&lt;li&gt;Work through LC7.1-LC7.5&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 11 - Tuesday</title>
+      <link>/2017/04/11/week-11---tuesday/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/11/week-11---tuesday/</guid>
+      <description>
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Midterm Exam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read over all of &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/6-sim.html&#34;&gt;Chapter 6&lt;/a&gt; of ModernDive&lt;/li&gt;
+&lt;li&gt;Work through LC6.1-LC6.17 in RStudio as needed
+
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;ll choose some subset of these questions to make up a Problem Set&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m hoping you have time in class on Thursday to talk about your responses to these Learning Checks with partners after I lecture on the content covered in the remainder of Chapter 6.  Lecture will go much more smoothly if you have done the reading BEFORE class though.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 10 - Tuesday</title>
+      <link>/2017/04/04/week-10---tuesday/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/04/week-10---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week10t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reviewed terminology from Chapter 6 on sampling from &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/6-sim.html&#34;&gt;ModernDive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps9&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Work through &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/Exam1R.html&#34;&gt;Exam 1&lt;/a&gt; and &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/Exam2R.html&#34;&gt;Exam 2&lt;/a&gt; from last semester for practice
+
+&lt;ul&gt;
+&lt;li&gt;You should skip Problem 4 on Exam 2 as we will be covering that content later in our course.&lt;/li&gt;
+&lt;li&gt;Note that Exam 1 last semester was a Take Home Exam so the questions are a little more challenging at times than what I would ask you for an in-class exam.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Continue studying for the Midterm Exam, which will occur during class on Tuesday, April 11
+
+&lt;ul&gt;
+&lt;li&gt;The exam will cover Chapters 3, 4, and 5 and Section 6.1 of &lt;a href=&#34;http://moderndive.com&#34;&gt;ModernDive&lt;/a&gt; and the content covered on the slides from &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week10t&#34;&gt;here&lt;/a&gt; on&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;For Practice on understanding of Chapter 6 material&lt;/em&gt;: LC6.1-LC6.17 from &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/6-sim.html&#34;&gt;ModernDive&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In particular, focus on LC6.1-LC6.7 for the exam&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 08 - Tuesday</title>
+      <link>/2017/03/21/week-08---tuesday/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/21/week-08---tuesday/</guid>
+      <description>
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quiz #3 individually and in groups&lt;/li&gt;
+&lt;li&gt;Peer review another group&amp;rsquo;s Group Project Draft&lt;/li&gt;
+&lt;li&gt;Finish &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Revised Group Project&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Final revisions to your Group Project are due by 10 AM in your Google Drive folder on Thursday, March 23&lt;/li&gt;
+&lt;li&gt;Make sure that you have a knitted HTML document (&lt;code&gt;group_project_final.html&lt;/code&gt;) and the corresponding &lt;code&gt;group_project_final.Rmd&lt;/code&gt; in your group Google Drive folder&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://goo.gl/forms/tCBFF7cuMbYgPIyb2&#34;&gt;Problem Set 8&lt;/a&gt; includes you filling out a midterm course evaluation, a peer review, and an individual review of your group project.
+
+&lt;ul&gt;
+&lt;li&gt;You will need to fill out the form by 4:20 PM on Thursday, March 23 to receive credit.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Please be candid and up-front about ways I can improve the course after spring break.  Remember that this course will challenge you and that won&amp;rsquo;t be changing after break, but if I can fix the timing or the way content is covered it is much better that I hear about that NOW and not when the class is over.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 07 - Thursday</title>
+      <link>/2017/03/16/week-07---thursday/</link>
+      <pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/16/week-07---thursday/</guid>
+      <description>
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Answer questions about PS6 Learning Checks&lt;/li&gt;
+&lt;li&gt;Peer review another group&amp;rsquo;s Group Project Draft&lt;/li&gt;
+&lt;li&gt;Work through &lt;a href=&#34;Quiz3-individual.pdf&#34;&gt;Quiz #3&lt;/a&gt; from last semester&lt;/li&gt;
+&lt;li&gt;Finish &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Group Project Draft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complete &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/dplyr-review-8&#34;&gt;dplyr Review&lt;/a&gt; DataCamp chapter (Due on March 21 at 11:59 PM)&lt;/li&gt;
+&lt;li&gt;Study for Quiz #3 that will occur at the beginning of class on Tuesday, March 21
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1XuGwrSX6OJehSDoYtQqDpUhjRzFzul-yarbMC3EaGig/edit?usp=sharing&#34;&gt;Potential questions for Quiz #3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can check to see if your answers are correct on this &lt;a href=&#34;https://goo.gl/forms/ui9gMLkrXgsQwv733&#34;&gt;Google Form&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The quiz will cover chapters 3, 4, and 5 of ModernDive, the corresponding DataCamp assignments, and material we have covered in class.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;I will send you a message on Slack to your group when I have provided my comments on your Group Project Draft.
+
+&lt;ul&gt;
+&lt;li&gt;Final revisions to your Group Project are due by 10 AM in your Google Drive folder on Thursday, March 23&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://goo.gl/forms/tCBFF7cuMbYgPIyb2&#34;&gt;Problem Set 8&lt;/a&gt; includes you filling out a midterm course evaluation, a peer review, and an individual review of your group project.
+
+&lt;ul&gt;
+&lt;li&gt;You will need to fill out the form by 4:20 PM on Thursday, March 23 to receive credit.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Please be candid and up-front about ways I can improve the course after spring break.  Remember that this course will challenge you and that won&amp;rsquo;t be changing after break, but if I can fix the timing or the way content is covered it is much better that I hear about that NOW and not when the class is over.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 07 - Tuesday</title>
+      <link>/2017/03/14/week-07---tuesday/</link>
+      <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/14/week-07---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week08t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review the Five Main Verbs of Data Wrangling&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Group Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review the &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/ps-key/index.html#ps6-key&#34;&gt;Problem Set 6 Discussion&lt;/a&gt; and identify at least one question you have about what I have written compared to what you wrote as a response.&lt;/li&gt;
+&lt;li&gt;Finish your Group Project by writing your final analysis ALL inside the &lt;code&gt;group_project.Rmd&lt;/code&gt; file
+
+&lt;ul&gt;
+&lt;li&gt;I recommend that you do this on only one machine so that you don&amp;rsquo;t overwrite someone else&amp;rsquo;s work using Google Drive.  Google Drive is great for backing things up but not for everyone working on the same file at the same time.&lt;/li&gt;
+&lt;li&gt;Ensure that the Rmd file produces an HTML file when you press the &lt;strong&gt;Knit&lt;/strong&gt; button in RStudio&lt;/li&gt;
+&lt;li&gt;The Group Project will be due at the beginning of class on Thursday, March 16&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Complete &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps7&#34;&gt;PS7&lt;/a&gt; by 1 PM on Thursday, March 16
+
+&lt;ul&gt;
+&lt;li&gt;Carefully follow the instructions on the PS7 assignment&lt;/li&gt;
+&lt;li&gt;Share the five multiple choice questions based ONLY on Chapter 5 with isma5720@pacificu.edu&lt;/li&gt;
+&lt;li&gt;Quiz #3 on Tuesday, March 21 will cover Chapters 3-5 of ModernDive&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 06 - Thursday</title>
+      <link>/2017/03/09/week-06---thursday/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/09/week-06---thursday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week06th&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review the Five Main Verbs of Data Wrangling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filter()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;summarize&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;group_by()&lt;/code&gt; with &lt;code&gt;summarize()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Talked about always needing to do &lt;code&gt;filter()&lt;/code&gt; BEFORE you do &lt;code&gt;group_by()&lt;/code&gt; with &lt;code&gt;summarize()&lt;/code&gt;  (It won&amp;rsquo;t work if you do it in a different order!)&lt;/li&gt;
+&lt;li&gt;Discuss the last two of the FMV
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mutate()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arrange()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Group Project&lt;/a&gt;, &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps6&#34;&gt;Problem Set 6&lt;/a&gt;, and DataCamp assignment &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing?ex=1&#34;&gt;DC9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meet with your group to work on Group Project&lt;/li&gt;
+&lt;li&gt;Make sure to enter your R code in your own &lt;code&gt;scratch_&amp;lt;name&amp;gt;.R&lt;/code&gt; files in the Google Drive
+folder&lt;/li&gt;
+&lt;li&gt;Complete &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps6&#34;&gt;Problem Set 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Complete  &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing?ex=1&#34;&gt;Filtering, Grouping, &amp;amp; Summarizing&lt;/a&gt; DataCamp chapter (Due on March 14 at 1 PM)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 06 - Tuesday</title>
+      <link>/2017/03/07/week-06---tuesday/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/07/week-06---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week06t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work on getting Group Project files set up in RStudio&lt;/li&gt;
+&lt;li&gt;Discuss some of the Five Main Verbs of Data Wrangling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filter()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;summarize&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;group_by&lt;/code&gt; with &lt;code&gt;summarize&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Group Project&lt;/a&gt;, &lt;a href=&#34;https://ismayc.github.io/soc301_s2017/problem-sets/index.html#ps6&#34;&gt;Problem Set 6&lt;/a&gt;, and DataCamp assignments &lt;a href=&#34;https://www.datacamp.com/courses/reporting-with-r-markdown&#34;&gt;DC8&lt;/a&gt; and &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing?ex=1&#34;&gt;DC9&lt;/a&gt; below&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meet with your group to work on Group Project
+
+&lt;ul&gt;
+&lt;li&gt;Ensure everyone in your group has the Google Drive folder downloaded to their
+computer and is able to work with it inside RStudio&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ll check this at the beginning of class and you&amp;rsquo;ll lose points as a group for
+your project if you don&amp;rsquo;t have this working for all members of your group&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Complete &lt;a href=&#34;https://www.datacamp.com/courses/reporting-with-r-markdown&#34;&gt;Reporting with R Markdown&lt;/a&gt; DataCamp course (Due on March 9 at 1 PM)&lt;/li&gt;
+&lt;li&gt;Begin &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing?ex=1&#34;&gt;Filtering, Grouping, &amp;amp; Summarizing&lt;/a&gt; DataCamp chapter (Due on March 14 at 1 PM)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 05 - Thursday</title>
+      <link>/2017/03/02/week-05---thursday/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/03/02/week-05---thursday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week05th&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quiz #2&lt;/li&gt;
+&lt;li&gt;Demonstrate R, RStudio, and R Markdown&lt;/li&gt;
+&lt;li&gt;Work on starting &lt;a href=&#34;../../../../group_project_outline/index.html&#34;&gt;Group Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complete your &lt;a href=&#34;../../../../group_project_outline/index.html#proposal&#34;&gt;Group Project Proposal&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Complete &lt;a href=&#34;https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1&#34;&gt;Working with the RStudio IDE (Part 1) - Orientation chapter&lt;/a&gt; on DataCamp (Due on March 7 at 1 PM)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This will require you to download and install &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;RStudio Desktop&lt;/a&gt; to your laptop computer.  The sooner you do this the better.  If you have issues, please reach out to me AS SOON AS POSSIBLE!&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;After you have downloaded and installed both R and RStudio Desktop, copy all lines of the following code, paste it into in the R Console, and press Enter on your keyboard.  This code will install all of the packages we will (probably) need throughout the remainder of the semester. This code is also listed in &lt;a href=&#34;https://ismayc.github.io/moderndiver-book/index.html#getting-started---for-students&#34;&gt;Chapter 1 of ModernDive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This will take a few minutes and you&amp;rsquo;ll see lots of red text.  This is not a bad thing but rather just notifications on the progress of the downloading and installation of the packages.  It might take 15 minutes or a little longer to complete.  You can be sure that everything has been installed correctly if you run the exact same chunk of code and it immediately sends you back to &lt;code&gt;&amp;gt;&lt;/code&gt; in the R Console.  You can also check the &lt;strong&gt;Packages&lt;/strong&gt; tab in the lower right corner of RStudio for a listing of all of the packages installed on your computer.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;needed_pkgs &amp;lt;- c(&amp;quot;nycflights13&amp;quot;, &amp;quot;tibble&amp;quot;, &amp;quot;dplyr&amp;quot;, 
+                 &amp;quot;ggplot2&amp;quot;, &amp;quot;knitr&amp;quot;, &amp;quot;okcupiddata&amp;quot;, &amp;quot;dygraphs&amp;quot;, 
+                 &amp;quot;rmarkdown&amp;quot;, &amp;quot;mosaic&amp;quot;, &amp;quot;ggplot2movies&amp;quot;, 
+                 &amp;quot;fivethirtyeight&amp;quot;)
+
+new.pkgs &amp;lt;- needed_pkgs[!(needed_pkgs %in% installed.packages())]
+
+if(length(new.pkgs)) {
+  install.packages(new.pkgs, repos = &amp;quot;http://cran.rstudio.com&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Begin &lt;a href=&#34;https://www.datacamp.com/courses/reporting-with-r-markdown&#34;&gt;Reporting with R Markdown&lt;/a&gt; DataCamp course (Due on March 9 at 1 PM)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Week 05 - Tuesday</title>
+      <link>/2017/02/28/week-05---tuesday/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/28/week-05---tuesday/</guid>
+      <description>
+
+&lt;p&gt;Slides available &lt;a href=&#34;http://ismayc.github.io/soc301_s2017/slides/slide_deck.html#week05t&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;covered-content&#34;&gt;Covered Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Take Quiz #2 from last semester as a class using Plickers&lt;/li&gt;
+&lt;li&gt;Review Chapters 3 and 4 of &lt;a href=&#34;http://moderndive.com&#34;&gt;ModernDive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Work on &lt;a href=&#34;https://docs.google.com/a/pacificu.edu/document/d/1uNEM3zOidLbsfTYcYVc78jxNB6DwfjI7ZGgeDSxCvAI/edit?usp=sharing&#34;&gt;Practice Problems for Quiz #2&lt;/a&gt; in groups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;to-do-for-next-time&#34;&gt;To do for next time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Study for Quiz #2 covering Chapters 3 and 4 of &lt;a href=&#34;http://moderndive.com&#34;&gt;ModernDive&lt;/a&gt; and the corresponding chapters on DataCamp (&lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/tidy-data&#34;&gt;Tidy Data&lt;/a&gt; through &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/ggplot2-review?ex=1&#34;&gt;ggplot2 Review&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Complete &lt;a href=&#34;https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/ggplot2-review?ex=1&#34;&gt;ggplot2 Review&lt;/a&gt; DataCamp chapter (Due on March 2 at 1 PM)&lt;/li&gt;
+&lt;li&gt;Begin &lt;a href=&#34;https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1&#34;&gt;Working with the RStudio IDE (Part 1) - Orientation chapter&lt;/a&gt; on DataCamp (Due on March 7 at 1 PM)
+
+&lt;ul&gt;
+&lt;li&gt;This will require you to download R and RStudio Desktop to your laptop computer.  The sooner you do this the better.  If you have issues, please reach out to me AS SOON AS POSSIBLE!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

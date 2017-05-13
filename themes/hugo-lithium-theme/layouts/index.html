@@ -1,0 +1,53 @@
+{{ partial "header.html" . }}
+
+<h1 align="center">A Fully Customizable Textbook for Introductory Statistics/Data Science - USCOTS Workshop</h1>
+
+<!--
+<h2 align="center"> Running <a href="http://ismayc.github.io/soc301_s2017/slides/slide_deck.html">slide deck</a>
+</h2>
+
+<h2 align="center"> <a href="midterm_review/index.html">Midterm Exam Review</a> </h2>
+
+<h2 align="center"> <a href="group-projects/index.html">Group Projects</a> </h2>
+-->
+
+<main class="content" role="main">
+
+Hello USCOTS participants, thank you for registering for the “A Fully Customizable Textbook for Introductory Statistics/Data Science Courses” workshop on Wednesday, May 17th and Thursday May 18th.
+
+In preparation, please:
+
+<ul>
+<li> If don’t have a <a href="https://github.com">GitHub</a> account already, please create one.</li>
+<li>Ensure you have R version 3.3.0 or later & RStudio version 1.0.0 or later</li>
+<li>Install/update these R packages: tidyverse, bookdown, mosaic, knitr, rmarkdown, fivethirtyeight, nycflights13, okcupiddata, ggplot2movies</li>
+<li>Complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXMrSbYcQZa20MXVoBE6u7JzLghRwFFncZvrRVzoxJw7Oycw/viewform">intro survey</a> as we’d love to get a sense of your backgrounds and needs.</li>
+<li>Look over this webpage that will be updated with further details and materials in the days to come.</li>
+  <ul>
+    <li>The <a href="http://ismayc.github.io/moderndive-workshops/resources/index.html">Resources</a> page provides links to our course webpages and other useful materials.</li>
+    <li>The <a href="http://ismayc.github.io/moderndive-workshops/schedule/index.html">Schedule</a> page provides an outline of what we will cover during the workshop.</li>
+  </ul>
+</ul>
+
+Please don’t hesitate to contact us via email beforehand.
+
+<a href="mailto:albert@moderndive.com">Albert</a> & <a href="mailto:chester@moderndive.com">Chester</a>
+
+<!--
+  <div class="archive">
+    {{ range .Data.Pages.GroupByDate "January 2006"  }}
+    <h2 class="archive-title">{{ .Key }}</h2>
+    {{ range where .Pages "Section" "post" }}
+    <article class="archive-item">
+      <a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
+      <span class="archive-item-date">
+        {{ .Date.Format "January 2, 2006" }}
+      </span>
+    </article>
+    {{ end }}
+    {{ end }}
+  </div>
+-->
+</main>
+
+{{ partial "footer.html" . }}

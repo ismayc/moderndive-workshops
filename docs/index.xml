@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ModernDive Workshops</title>
+    <link>/index.xml</link>
+    <description>Recent content on ModernDive Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 May 2017 15:48:25 -0700</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Schedule</title>
+      <link>/schedule/</link>
+      <pubDate>Sat, 13 May 2017 15:48:25 -0700</pubDate>
+      
+      <guid>/schedule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>/resources/</link>
+      <pubDate>Sat, 13 May 2017 15:46:25 -0700</pubDate>
+      
+      <guid>/resources/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;[ModernDive Light]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ismayc.github.io/https://ismayc.github.io/soc301_s2017/&#34;&gt;Chester&amp;rsquo;s Social Statistics Course&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://rudeboybert.github.io/MATH116/&#34;&gt;Albert&amp;rsquo;s Intro to Statistical &amp;amp; Data Sciences Course&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

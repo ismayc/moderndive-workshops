@@ -1,0 +1,36 @@
+baseurl = "/"
+author = "Chester Ismay"
+publishDir = "docs"
+relativeurls = true
+languageCode = "en-us"
+title = "ModernDive Workshops"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Schedule"
+    url = "/schedule/"   
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"     
+
+[params]
+    description = "ModernDive USCOTS Workshop"
+    author = "Chester Ismay and Albert Y. Kim"
+    
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "moderndive-logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
