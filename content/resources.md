@@ -3,7 +3,7 @@ date: 2017-05-13T15:46:25-07:00
 title: Resources
 ---
 
-- [ModernDive Light]
+- [ModernDive Light bookdown file (ZIP)](https://github.com/ismayc/moderndiver-lite/archive/master.zip)
 
 - [Chester's Social Statistics Course](http://ismayc.github.io/https://ismayc.github.io/soc301_s2017/)
 
