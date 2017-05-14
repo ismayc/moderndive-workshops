@@ -36,7 +36,7 @@ a, a > code {
 }
 /* Two-column layout */
 .left-column {
-  width: 47%;
+  width: 57%;
   height: 100%;
   float: left;
 }
@@ -44,7 +44,7 @@ a, a > code {
   color: #000;
 } */
 .right-column {
-  width: 47%;
+  width: 43%;
   float: right;
 }
 .pull-left {
