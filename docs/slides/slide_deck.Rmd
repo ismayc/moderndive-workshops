@@ -8,7 +8,7 @@ output:
     lib_dir: libs
     df_print: paged
     nature:
-      highlightStyle: monokai
+      highlightStyle: github
       highlightLines: true
       highlightLanguage: r
     countIncrementalSlides: false
@@ -938,3 +938,168 @@ ggplot(data = police_join_cost,
   geom_point(aes(color = state_ideology)) +
   labs(x = "Cost of Living Index", y = "% Officers Living in City")
 ```
+
+---
+
+# Statistical Inference
+
+---
+
+# Introduction to `bookdown`
+
+---
+
+
+## What is Markdown?
+
+ - A "plaintext formatting syntax"
+ - Type in plain text, render to more complex formats
+ - One step beyond writing a `txt` file
+ - Render to HTML, PDF, DOCX, etc. using Pandoc
+
+---
+
+## What does it look like?
+
+<style>
+  #wrap {
+   width:900px;
+   margin:0 auto;
+  }
+
+  #left_col {
+   float:left;
+   width:550px;
+  }
+  
+  #right_col {
+   float:right;
+   width:350px;
+  }
+     
+</style>
+
+<!--<div id="wrap">
+  <div id="left_col">
+-->
+
+.left-column[
+```
+  # Header 1
+  
+  ## Header 2
+  
+  Normal paragraphs of text go here.
+  
+  **I'm bold**
+  
+  [links!](http://rstudio.com)
+  
+   * Unordered
+   * Lists   
+   
+  And  Tables
+  ---- -------
+  Like This
+  
+```
+]
+
+.right-column[
+<img src="figure/markdown.png" alt="markdown" style="width: 270px;"/>
+]
+
+---
+
+## What is R Markdown?
+  
+- "Literate programming"
+- Embed R code in a Markdown document
+- Renders textual output along with graphics
+
+***
+
+.left-column[
+```
+
+```{r chunk1}
+library(ggplot2)
+library(nycflights13)
+pdx_flights <- flights %>% 
+  filter(dest == "PDX", month == 5)
+nrow(pdx_flights)
+```
+
+```{r chunk2}
+ggplot(data = pdx_flights,
+  mapping = aes(x = arr_delay, 
+                y = dep_delay)) +
+  geom_point()
+```
+
+```
+]
+
+.right-column[
+```{r, fig.width=4.5, fig.height=4, echo=FALSE}
+library(ggplot2)
+library(nycflights13)
+pdx_flights <- flights %>% 
+  filter(dest == "PDX", month == 5)
+nrow(pdx_flights)
+ggplot(data = pdx_flights,
+  mapping = aes(x = arr_delay, 
+                y = dep_delay)) +
+  geom_point()
+```
+]
+
+---
+
+# What is `bookdown`?
+
+From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
+
+> Author books with R Markdown, including generating figures and tables, and inserting cross-references, citations, HTML widgets, and Shiny apps in R Markdown. The book can be exported to HTML, PDF, and e-books (e.g. EPUB). The book style is customizable. You can easily write and preview the book in RStudio IDE or other editors, and host the book wherever you want (e.g. bookdown.org).
+
+---
+
+class: center, middle
+
+# DEMO with ModernDive Light
+
+---
+
+class: center, middle
+
+# The Future
+
+---
+
+# Longer Term
+
+## DataCamp
+
+- Continue to build supplementary materials for other disciplines
+  - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
+  - Add [DataCamp Light](https://github.com/datacamp/datacamp-light) chunks into the book to enable student practice right there inside the textbook via the `tutorial` [package](https://github.com/datacamp/tutorial)
+
+---
+
+# Longer Term 
+
+## Implement Cognitive Science Research
+
+- Work on interleaving and spaced practice inside the textbook to improve student learning and retention
+- Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
+
+---
+
+# Longer Term 
+
+## Further Develop Interactive Applets
+
+- To help students visualize and understand inferential processes
+  - [Sampling app](https://ismay.shinyapps.io/okcupidheights/)
+  - [Probability Distribution Viewer and Calculator](http://ismay.shinyapps.io/ProbApp)
+- (MAYBE) Learn D3.js and create applets like those at [Seeing Theory](http://students.brown.edu/seeing-theory/)
