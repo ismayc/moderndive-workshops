@@ -120,13 +120,13 @@ dem_score
 
 ## Beginning steps
 
-Frequently the first thing you should do when given a dataset is to
+Frequently the first thing to do when given a dataset is to
 - check that the data is <u>tidy</u>,
 - identify the observational unit,
 - specify the variables, and
 - give the types of variables you are presented with.
 
-This will help you with 
+This will help with 
 - choosing the appropriate plot, 
 - summarizing the data, and 
 - understanding which inferences can be applied.
