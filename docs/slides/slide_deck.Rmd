@@ -1,0 +1,132 @@
+---
+title: A Fully Customizable Textbook for Introductory Statistics/Data Science
+subtitle: USCOTS 2017 Workshop
+author: Chester Ismay and Albert Y. Kim
+date: May 17 & 18, 2017
+output: 
+  xaringan::moon_reader:
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: monokai
+      highlightLines: true
+      highlightLanguage: r
+    countIncrementalSlides: false
+    css: example.css
+---
+
+```{r include=FALSE}
+#options(servr.daemon = TRUE)
+library(tidyverse)
+do <- mosaic::do
+filter <- dplyr::filter
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, fig.width=9.5, fig.height=4.5, comment=NA, rows.print=16)
+theme_set(theme_gray(base_size = 26))
+```
+
+## Important R ideas for students to know ASAP
+
+Vector/variable
+  - Type of vector (`int`, `num`, `chr`, `logical`, `date`)
+
+--
+
+Data frame
+  - Vectors of (potentially) different types
+  - Each vector has the same number of rows
+  
+---
+
+class: center, middle  
+  
+# Welcome to the [tidyverse](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/)!
+  
+The `tidyverse` is a collection of R packages that share common philosophies and are designed to work together. <br><br> 
+  
+<a href="http://tidyverse.tidyverse.org/logo.png"><img src="figure/tidyverse.png" style="width: 200px;"/><a>
+
+---
+
+## What is Tidy Data?
+
+<img src="http://garrettgman.github.io/images/tidy-1.png" alt="Drawing" style="width: 750px;"/>
+
+1. Each variable forms a column.
+2. Each observation forms a row.
+3. Each type of observational unit forms a table.
+
+The third point means we don't mix apples and oranges.
+
+---
+
+## What is Tidy Data?
+
+1. Each observation forms a row. In other words, each row corresponds to a single instance of an <u>observational unit</u>
+1. Each variable forms a column:
+    + Some variables may be used to identify the <u>observational units</u>. 
+    + For organizational purposes, it's generally better to put these in the left-hand columns
+1. Each type of observational unit forms a table.
+
+---
+
+## Differentiating between <u>neat</u> data and <u>tidy</u> data
+
+- Colloquially, they mean the same thing
+- But in our context, one is a subset of the other. 
+
+<br>
+
+<u>Neat</u> data is 
+  - easy to look at, 
+  - organized nicely, and 
+  - in table form.
+
+--
+
+<u>Tidy</u> data is neat but also abides by a set of three rules.
+
+---
+
+class: center, middle
+
+<a href="figure/lebowski-abides-o.gif"><img src="http://stream1.gifsoup.com/view8/20150404/5192859/lebowski-abides-o.gif" style="width: 450px;"/></a>
+
+
+<img src="figure/tidy-1.png" alt="Drawing" style="width: 750px;"/>
+
+---
+
+## Is this tidy?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(fivethirtyeight)
+set.seed(2)
+bechdel %>% sample_n(16) %>%
+  select(year, title, clean_test, budget_2013) %>%
+  arrange(title)
+```
+
+
+---
+
+## Is this tidy?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+dem_score <- read_csv("data/dem_score.csv")
+dem_score
+```
+
+---
+
+## Beginning steps
+
+Frequently the first thing you should do when given a dataset is to
+- check that the data is <u>tidy</u>,
+- identify the observational unit,
+- specify the variables, and
+- give the types of variables you are presented with.
+
+This will help you with 
+- choosing the appropriate plot, 
+- summarizing the data, and 
+- understanding which inferences can be applied.

@@ -3,7 +3,9 @@ date: 2017-05-13T15:46:25-07:00
 title: Resources
 ---
 
-- [ModernDive Light bookdown file (ZIP)](https://github.com/ismayc/moderndiver-lite/archive/master.zip)
+Download this ZIP file & extract the contents to a folder on your computer - [ModernDive Light bookdown file (ZIP)](https://github.com/ismayc/moderndiver-lite/archive/master.zip)
+
+Our open-source textbook - [ModernDive.com](http://moderndive.com)
 
 - [Chester's Social Statistics Course](http://ismayc.github.io/https://ismayc.github.io/soc301_s2017/)
 
