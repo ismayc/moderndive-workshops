@@ -2,7 +2,7 @@
 title: A Fully Customizable Textbook for Introductory Statistics/Data Science
 subtitle: USCOTS 2017 Workshop
 author: Chester Ismay and Albert Y. Kim
-date: May 17 & 18, 2017
+date: May 17 & 18, 2017 <br><br> Slides available at <http://bit.ly/uscots17-slides>
 output: 
   xaringan::moon_reader:
     lib_dir: libs
