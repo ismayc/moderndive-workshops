@@ -559,7 +559,15 @@ class: center, middle
 
 class: center, middle
 
-# Data ~~Manipulation~~ Wrangling
+### Determining the appropriate plot
+
+<a href="https://coggle.it/diagram/V_G2gzukTDoQ-aZt"><img src="figure/viz_mindmap.png" style="width: 400px;"/><a>
+
+---
+
+class: center, middle
+
+# Shifting to Data ~~Manipulation~~ Wrangling
 
 ---
 
