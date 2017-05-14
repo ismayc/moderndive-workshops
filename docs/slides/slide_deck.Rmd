@@ -345,10 +345,12 @@ name: whytidy
 
 ## Why is tidy data important?
 
-- Think about trying to plot democracy score across years for all in the simplest way possible with the data on the [Is this tidy? slide](#demscore).
+- Think about trying to plot democracy score across years in the simplest way possible with the data on the [Is this tidy? slide](#demscore).
 --
 
-- It would be much easier if the data looked like what follows instead so we could put `year` on the `x`-axis and `dem_score` on the `y`-axis.
+- It would be much easier if the data looked like what follows instead so we could put 
+    - `year` on the `x`-axis and 
+    - `dem_score` on the `y`-axis.
 
 ---
 
@@ -367,7 +369,7 @@ dem_score_tidy %>% sample_n(13) %>% arrange(country) %>%
 
 # Let's plot it
 
-- Plot the line graph requested above for 4 countries
+- Plot the line graph for 4 countries using `ggplot`
 
 ```{r}
 dem_score4 <- dem_score_tidy %>%
