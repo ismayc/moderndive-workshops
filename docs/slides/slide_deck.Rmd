@@ -6,7 +6,6 @@ date: May 17 & 18, 2017 <br><br> Slides available at <http://bit.ly/uscots17-sli
 output: 
   xaringan::moon_reader:
     lib_dir: libs
-    df_print: paged
     nature:
       highlightStyle: github
       highlightLines: true
@@ -20,11 +19,372 @@ output:
 ```{r include=FALSE}
 #options(servr.daemon = TRUE)
 library(tidyverse)
+library(mosaic)
+library(stringr)
+library(okcupiddata)
+library(knitr)
 do <- mosaic::do
 filter <- dplyr::filter
 knitr::opts_chunk$set(warning=FALSE, message=FALSE, fig.width=9.5, fig.height=4.5, comment=NA, rows.print=16)
 theme_set(theme_gray(base_size = 24))
 ```
+
+<!----------------------------------------------------------------------------->
+# Introduction
+
+## Who We Are
+
+* [Chester Ismay](https://ismayc.github.io/): Reed College & Pacific University
+    + Email: <chester.ismay@gmail.com>
+    + GitHub: [`ismayc`](https://github.com/ismayc)
+    + Twitter: [`@old_man_chester`](https://twitter.com/old_man_chester)
+* [Albert Y. Kim](http://rudeboybert.github.io/): Middlebury College
+    + Email: <albert.ys.kim@gmail.com>
+    + GitHub: [`rudeboybert`](https://github.com/rudeboybert)
+    + Twitter: [`@rudeboybert`](https://twitter.com/rudeboybert)
+
+---
+
+class: center, middle
+
+## Outline of Workshop
+
+[Google Doc at <http://bit.ly/uscots17-agenda>](https://docs.google.com/document/d/12Ai7wxK5OTrIwwrSJQewXHcqpMJ09lB-HkGN3BbShy4/edit?usp=sharing)
+
+
+---
+
+## Our Textbook
+
+<img src="figure/moderndive-logo.png" height="75px"/>
+
+* *An Introduction to Statistical and Data Sciences via R*
+* Webpage: <http://moderndive.com>. [GitHub Repo](https://github.com/ismayc/moderndiver-book)
+* In you haven't already, please [signup](http://moderndive.us15.list-manage2.com/subscribe?u=87888fab720da90906427a5be&id=0c9e2d1df2) for our mailing list!
+
+---
+
+## ModernDive and Our Syllabi
+
+* ModernDive's guiding philosophies are deeply intertwined our syllabi
+--
+
+* Hard to speak of ModernDive in isolation from syllabi and vice-versa
+--
+
+* Numbers are numbers, but data has context...
+
+---
+
+## Albert's Course (Introduction to Statistical & Data Sciences)
+
+* [Webpage](https://rudeboybert.github.io/MATH116/) and [GitHub Repo](https://github.com/rudeboybert/MATH116)
+* Administrative:
+    + Chief non-econ/bio stats service class at Middlebury
+    + 12 weeks each with 3h "lecture" + 1h "lab"
+    + <u>No prerequisites</u>
+
+---
+    
+## Albert's Course (Introduction to Statistical & Data Sciences)
+
+* Students:
+    + ~24 students/section of all years/backgrounds. Only stats class many will take
+    + Background: Many had AP stats, some with programming
+    + All had laptops that they brought everyday
+---
+
+## Albert's Syllabus
+
+* [Topic List](https://rudeboybert.github.io/MATH116/)
+    + <u>First half is data science</u>: data visualization, manipulation, importing
+    + <u>Second half is intro stats</u>: sampling, hypothesis tests, CI, regression
+* Evaluation
+    + 10%: weekly problem sets
+    + 10%: engagement
+    + 45%: 3 midterms (last during finals week)
+    + <u>35%: [Final projects](https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#learning_goals)</u>
+
+---
+
+## Albert's Typical Classtime
+
+* First 10-15min: Priming topic, either via slides or <u>chalk talk</u>
+* Remainder: Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
+
+<center><img src="figure/group_1.jpg" width="400px"/></center>
+
+---
+
+## Chester's Course (Social Statistics)
+
+* [Webpage at <http://bit.ly/soc-301>](https://ismayc.github.io/soc301_s2017/)  and [GitHub Repo](https://github.com/ismayc/soc301_s2017)
+* Administrative:
+    + Chief stats service class for sociology/criminal justice
+    + An option take to fulfill the Pacific U. math requirement
+    + 14 weeks, meeting on Tues & Thurs for 95 minutes
+    + <u>No prerequisites</u>
+    
+---
+
+## Chester's Course (Social Statistics)
+    
+* Students:
+    + 26 students of all years/backgrounds. Only stats class many will take
+    + Background: 3 had AP stats, zero with programming
+    + All had laptops that they brought everyday
+
+---
+
+## Chester's Syllabus
+
+* [Course Schedule](https://ismayc.github.io/soc301_s2017/schedule/)
+    + <u>First half is data science</u>: data visualization, wrangling, importing
+    + <u>Second half is intro stats</u>: sampling, testing, CI
+* [Evaluation](https://ismayc.github.io/soc301_s2017/syllabus/)
+    + 5%: Engagement/Pass-fail Learning Checks
+    + 10%: DataCamp/article summarizing assignments
+    + <u>15%: [Group Project](https://ismayc.github.io/soc301_s2017/group-projects/index.html)</u>    
+    + 20%: Pencil-and-paper Midterm Exam
+    + 25%: (5) Multiple choice cumulative quizzes
+    + 25%: Cumulative Pencil-and-paper Final Exam
+
+---
+
+## Chester's Typical Classtime
+
+* First 5-10min: Students answer warmup exercise based on previous content
+* Next 10-20min: Review reading assignment via [slides](http://ismayc.github.io/soc301_s2017/slides/slide_deck.html)
+* Bulk of class: 
+    - Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
+    - Students work on next DataCamp problems and ask questions as needed
+* Last 5-10min:  Go over warmup exercise again or quiz students on material from that period   
+
+---
+
+## What Are We Doing And Why?
+
+1. Data first! Start with data science via `tidyverse`, <br> then stats builds on these ideas.
+1. Replacing the <u>mathematical/analytic</u> with <u>computational/simulation-based</u> whenever possible.
+1. The above necessitates algorithmic thinking, computational logic and some coding/programming.
+1. Complete reproducibility
+
+
+<!--
+## 1) Data First!
+
+Actual dialogue I had with a student:
+
+![](figure/dialogue_1.png)
+-->
+
+---
+
+## 1) Data First!
+
+Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): *Minimizing prerequisites to research*. In other words, focus on entirety of Wickham/Grolemund's pipeline...
+
+![](figure/pipeline.png)
+
+
+---
+
+## 1) Data First!
+
+... and not just this part. 
+
+![](figure/pipeline2.png)
+
+---
+
+## 1) Data First!
+
+Furthermore use data science tools <u>that a data scientist would use</u>. Example: [`tidyverse`](http://tidyverse.org/)
+
+<br>
+
+<center><img src="figure/hex.png" height="300px"/></center>
+
+---
+
+## 1) Data First!
+
+What does this buy us?
+
+* Students can do effective data storytelling
+* Context for asking scientific questions
+* Look at data that's rich, real, and realistic. Examples: Data packages such as [`nycflights13`](https://github.com/hadley/nycflights13) and [`fivethirtyeight`](https://cran.r-project.org/web/packages/fivethirtyeight/vignettes/fivethirtyeight.html)
+* Better motivate traditional statistical topics
+
+---
+
+## 2) Computers, Not Math!
+
+Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): Two possible "computational
+engines" for statistics, in particular relating to sampling:
+
+* Mathematics: formulas, probability theory, large-sample approximations, central limit theorem
+--
+
+* Computers: simulations, resampling methods
+
+---
+
+## 2) Computers, Not Math!
+
+We present students with a choice for our "engine":
+
+<br/>
+
+Either we use this...            |  Or we use this...
+:-------------------------:|:-------------------------:
+<img src="figure/formulas.png" alt="Drawing" style="width: 250px;"/>   |  <img src="figure/coding.jpg" alt="Drawing" style="width: 250px;"/> 
+
+<br/>
+
+--
+
+* Almost all are thrilled to do the latter
+--
+
+* Leave "bread crumbs" for more advanced math/stats courses
+
+---
+
+## 2) Computers, Not Math!
+
+What does this buy us?
+
+* Emphasizes: stats is not math, rather stats uses math.
+* Simulations are more tactile
+* Reducing probability and march to CLT, this frees up space in syllabus.
+
+---
+
+## 3) Algorithms, Computation, & Coding
+
+* Both "Data First!" and "Computers, Not Math!" necessitate algorithmic thinking, computational logic, and some coding/programming.
+* Battle is more psychological than anything:
+    + "This is not a class on programming!"
+    + "Computers are stupid!"
+    + "Learning to code is like learning a foreign language!"
+    + "Early on don't code from scratch! Take something else that's similar and tweak it!"
+    + Learning how to Google effectively
+
+---
+
+## 3) Algorithms, Computation, & Coding
+
+Why should we do this?
+
+* Data science and machine learning.
+* Where statistics is heading. Gelman [blog post](http://andrewgelman.com/2017/05/14/computer-programming-prerequisite-learning-statistics/).
+* Many new tools, like DataCamp, allow us to outsource needed practice with instant feedback.
+* We are doing a disservice to students by shielding them from these computational ideas.
+
+---
+
+## 3) Algorithms, Computation, & Coding
+
+* Bigger picture:
+    + Coding is becoming a basic skill like reading and writing.
+    + Data analysis, as opposed to algorithms and data structures, could attract more students from traditionally underrepresented groups.
+
+---
+
+## 4) Complete Reproducibility
+
+* Students learn best when they can take can apart a toy (analysis) and then rebuild it (synthesis).
+* Crisis in Reproducibility
+* Ultimately the best textbook is one you've written yourself.
+    + Everyone has different contexts, backgrounds, needs
+    + Hard to find one-size-fits-all solutions
+* A new paradigm in textbooks? [Versions, not editions?](https://twitter.com/rudeboybert/status/820032345759592448)
+
+---
+
+class: center, middle, inverse
+
+## Let's Dive In!
+
+<a href="https://giphy.com/gifs/season-6-the-simpsons-6x1-l2Je1bFuOpkNpyqYM/"><img src="figure/homer.gif" style="width: 600px;"/><a>
+
+---
+
+<!----------------------------------------------------------------------------->
+# Getting Started
+
+## DataCamp
+
+DataCamp offers an interactive, browser based tool for learning R/Python. Their
+two flagship R courses, both of which are free:
+
+* [Intro to R](https://www.datacamp.com/courses/free-introduction-to-r) 
+* [Intermediate R](https://www.datacamp.com/courses/intermediate-r-practice) courses
+
+---
+
+## DataCamp
+
+Outsource many essential but not fun to teach topics like
+
+* Idea of command-line vs point-and-click
+* Syntax: Variable names typed exactly, parentheses matching
+* Algorithmic Thinking: Linearity of code, object assignment
+* Computational Logic: boolean algebra, conditional statements, functions
+
+---
+
+## DataCamp Pros
+
+* Can assign "Intro to R" first day of class as "Homework 0"
+* Outsourcing allows you to free up class time
+* Students get immediate feedback on whether or not their code works
+    + Often, the DataCamp error messages are much more useful than the ones R gives
+
+---
+
+## DataCamp Pros
+    
+* With their [free academic license](https://www.datacamp.com/groups/education), you can
+    + Form class "Groups" and assign/track progress of DataCamp courses
+    + Have free access to ALL [their courses](https://www.datacamp.com/courses), including `ggplot2`, `dplyr`, `rmarkdown`, and RStudio IDE.
+    + Create your own free DataCamp course covering content you want your students to learn using R
+
+---
+
+## DataCamp Cons
+
+* Some students will still have trouble; you can identify them however.
+* The topics in these two free courses may not align with your syllabus. You can assign at chapter level instead of course level though
+
+---
+
+## DataCamp Conclusion
+
+* Not a good tool for "quick retention", but for R concept introduction and subsequent repetition.
+  + Students need to practice "speaking the language" just like with a foreign language.
+* [Feedback](https://docs.google.com/spreadsheets/d/1qUwt-v-xAQJ-1OTzMI2Q27McXG_3yXO5Qe9p-jz6BA8/edit) from students was positive.
+* Battle is more psychological than anything. DataCamp reinforces to students that
+    + "Computers are stupid!"
+    + "Learning to code is like learning a foreign language!"
+
+---
+
+# Getting Started
+
+## Chester's First Bookdown Project
+
+[Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+
+- Designed to provide students with GIFs to follow along with and a description of all the components of RStudio and R Markdown
+
+---
+
+class: inverse
+
+
+---
 
 ## Important R ideas for students to know ASAP
 
@@ -103,9 +463,10 @@ class: center, middle
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(fivethirtyeight)
 set.seed(2)
-bechdel %>% sample_n(16) %>%
+bechdel %>% sample_n(12) %>%
   select(year, title, clean_test, budget_2013) %>%
-  arrange(title)
+  arrange(title) %>%
+  kable(format = "html")
 ```
 
 
@@ -117,7 +478,7 @@ name: demscore
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 dem_score <- read_csv("data/dem_score.csv")
-knitr::kable(dem_score %>% slice(1:14), format = "html")
+knitr::kable(dem_score %>% slice(1:12), format = "html")
 ```
 
 <small><small>[Why is tidy data important?](#whytidy) slide</small></small>
@@ -213,7 +574,7 @@ class: center, middle
 
 ---
 
-class: center, middle
+class: inverse, center, middle
 
 # Back to basics
 
@@ -442,6 +803,18 @@ ggplot(data = bechdel, mapping = aes(x = clean_test)) +
 
 ---
 
+# Add to end
+
+```{r}
+library(forcats)
+library(fivethirtyeight)
+ggplot(data = bechdel, mapping = aes(x = clean_test %>% fct_infreq %>% fct_rev)) +
+  geom_bar()
+```
+
+
+---
+
 # How about over time?
 
 - Hop into `dplyr`
@@ -508,7 +881,7 @@ class: center, middle
 
 ## Practice
 
-Produce an appropriate 5NG for these scenarios with R package & data set in [ ], <br> e.g., [`nycflights13` $\rightarrow$ `weather`] 
+Produce appropriate 5NG with R package & data set in [ ], e.g., [`nycflights13` $\rightarrow$ `weather`] 
 
 <!--
 Try to look through the help documentation/Google to improve your plots
@@ -516,11 +889,11 @@ Try to look through the help documentation/Google to improve your plots
 
 1. Does `age` predict `recline_rude`? <br> [`fivethirtyeight` $\rightarrow$ `na.omit(flying)`]
 
-2. Distribution of `age` by `sex` in [`okcupiddata` $\rightarrow$ `profiles`]
+2. Distribution of `age` by `sex` <br> [`okcupiddata` $\rightarrow$ `profiles`]
 
 3. Does `budget` predict `rating`? <br> [`ggplot2movies` $\rightarrow$ `movies`]
 
-4. Distribution of `budget_2013` on the log base 10 scale [`fivethirtyeight` $\rightarrow$ `bechdel`]
+4. Distribution of log base 10 scale of `budget_2013` <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
 
 ---
 
@@ -553,7 +926,7 @@ grid.arrange(p1, p2, p3, p4, ncol = 2, padding = unit(0.5, "line"),
 
 ---
 
-class: center, middle
+class: inverse, center, middle
 
 # DEMO
 
@@ -627,7 +1000,7 @@ gapminder %>% filter(continent == "Asia") %>%
 
 # `filter()`
 
-- Allows you to select a subset of the rows of a data frame. 
+- Select a subset of the rows of a data frame. 
 
 - The arguments are the "filters" that you'd like to apply.
 --
@@ -638,21 +1011,7 @@ gap_2007 <- gapminder %>% filter(year == 2007)
 head(gap_2007)
 ```
 
----
-
-# Logical operators
-
 - Use `==` to compare a variable to a value
---
-
-```{r eval=FALSE}
-library(gapminder); library(dplyr)
-gap_2007 <- gapminder %>% filter(year = 2007)
-```
-
-```
-Error: filter() takes unnamed arguments. Do you need `==`?
-```
 
 ---
 
@@ -693,7 +1052,7 @@ gapminder %>%
 
 # Logical operators
 
-- Use `%in%` to check for any being true <br> (shortcut to using `|` repeatedly)
+- Use `%in%` to check for any being true <br> (shortcut to using `|` repeatedly with `==`)
 --
 
 ```{r eval=FALSE}
@@ -761,9 +1120,9 @@ max_exp_1997_by_cont
 
 ## `ggplot2` revisited
 
-For aggregated data, use `geom_col` instead of `geom_bar`
+For aggregated data, use `geom_col`
 
-```{r}
+```{r fig.height=4.5}
 ggplot(data = max_exp_1997_by_cont, 
        mapping = aes(x = continent, y = max_exp)) +
   geom_col()
@@ -889,12 +1248,12 @@ gapminder %>% arrange(year)
 # Changing of observation unit
 
 True or False
-> Each of `filter`, `mutate`, and `arrange` change the observational unit
+> Each of `filter`, `mutate`, and `arrange` change the observational unit.
 
 --
 
 True or False
-> `group_by() %>% summarize()` changes the observational unit
+> `group_by() %>% summarize()` changes the observational unit.
 
 <!-- 
 Draw diagram for average monthly temp aggregated like on rstudio::conf slides
@@ -943,9 +1302,257 @@ ggplot(data = police_join_cost,
 
 ---
 
+class: inverse, center, middle
+
 # Statistical Inference
 
 ---
+
+## Chapter 6: Sampling Highlights
+
+## Chapter 7: Hypothesis Testing Highlights
+
+## Chapter 8: Confidence Intervals Highlights
+
+---
+
+## Chapter 9: Regression Highlights
+
+1. Experience with `ggplot2` package and knowledge of the Grammar of Graphics primes students for regression
+1. Use of the `broom` package to unpack regression
+
+---
+
+## 1. `ggplot2` Primes Regression
+
+* Mapping aesthetics to variables provides a natural framework for all of data visualization.  Understanding the relationships between variables is clear and transparent from the `ggplot2` code.
+* This ultimately what regression is about!
+
+---
+
+## 1. `ggplot2` Primes Regression
+
+Example:
+
+* All Alaskan Airlines and Frontier flights leaving NYC in 2013
+* We want to study the relationship between temperature and departure delay
+* For summer (June, July, August) and non-summer months separately
+
+Involves four variables: 
+
+- `carrier`, `temp`, `dep_delay`, `summer`
+
+---
+
+## 1. `ggplot2` Primes Regression
+
+```{r, echo=FALSE, fig.height=5, fig.width=10.5}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+
+flights_subset <- flights %>% 
+  filter(carrier == "AS" | carrier == "F9") %>% 
+  left_join(weather, by=c("year", "month", "day", "hour", "origin")) %>% 
+  filter(dep_delay < 250) %>% 
+  mutate(summer = ifelse(month == 6 | month == 7 | month == 8, "Summer Flights", "Non-Summer Flights"))
+
+ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~summer)
+```
+
+---
+
+## 1. `ggplot2` Primes Regression
+
+Why? Dig deeper into data. Look at `origin` and `dest` variables as well:
+
+<br> 
+
+```{r, echo=FALSE, fig.width=10.5, fig.height=5}
+flights_subset %>% 
+  group_by(carrier, origin, dest) %>% 
+  summarise(`Number of Flights` = n()) %>% 
+  kable(digits=3, format = "html")
+```
+
+---
+
+
+## 2. `broom` Package
+
+* The `broom` package takes the messy output of built-in modeling functions in R, such as
+`lm`, `nls`, or `t.test`, and turns them into tidy data frames.
+* Fits in with `tidyverse` ecosystem
+* This works for [many R data types](https://github.com/tidyverse/broom#available-tidiers)!
+
+---
+
+## 2. `broom` Package
+
+In our case, `broom` functions take `lm` objects as inputs and return the following in tidy format!
+
+* `tidy()`: regression output table
+* `augment()`: point-by-point values (fitted values, residuals, predicted values)
+* `glance()`: scalar summaries like $R^2$, 
+
+---
+
+## 2. `broom` Package
+
+The chapter will be built around this code:  (Available in the supplementary HTML document [here].)
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(nycflights13)
+library(knitr)
+library(broom)
+set.seed(2017)
+
+# Load Alaska data, deleting rows that have missing departure delay
+# or arrival delay data
+alaska_flights <- flights %>% 
+  filter(carrier == "AS") %>% 
+  filter(!is.na(dep_delay) & !is.na(arr_delay)) %>% 
+  sample_n(50)
+View(alaska_flights)
+
+
+# Exploratory Data Analysis----------------------------------------------------
+# Plot of sample of points:
+ggplot(data = alaska_flights, mapping = aes(x = dep_delay, y = arr_delay)) + 
+   geom_point()
+
+# Correlation coefficient:
+alaska_flights %>% 
+  summarize(correl = cor(dep_delay, arr_delay))
+
+# Add regression line
+ggplot(data = alaska_flights, mapping = aes(x = dep_delay, y = arr_delay)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "red")
+
+
+# Fit Regression and Study Output with broom Package---------------------------
+# Fit regression
+delay_fit <- lm(formula = arr_delay ~ dep_delay, data = alaska_flights)
+
+# 1. broom::tidy() regression table with confidence intervals and no p-value stars
+regression_table <- delay_fit %>% 
+  tidy(conf.int=TRUE)
+regression_table %>% 
+  kable(digits=3)
+
+# 2. broom::augment() for point-by-point values
+regression_points <- delay_fit %>% 
+  augment() %>% 
+  select(arr_delay, dep_delay, .fitted, .resid) 
+regression_points %>% 
+  head() %>% 
+  kable(digits=3)
+
+# and for prediction
+new_flights <- data_frame(dep_delay = c(25, 30, 15))
+delay_fit %>% 
+  augment(newdata = new_flights) %>% 
+  kable()
+
+# 3. broom::glance() scalar summaries of regression
+regression_summaries <- delay_fit %>% 
+  glance() 
+regression_summaries %>% 
+  kable(digits=3)
+
+
+# Residual Analysis------------------------------------------------------------
+ggplot(data = regression_points, mapping = aes(x = .resid)) +
+  geom_histogram(binwidth=10) +
+  geom_vline(xintercept = 0, color = "blue")
+ggplot(data = regression_points, mapping = aes(x = .fitted, y = .resid)) +
+  geom_point() +
+  geom_abline(intercept = 0, slope = 0, color = "blue")
+ggplot(data = regression_points, mapping = aes(sample = .resid)) +
+  stat_qq()
+
+
+# Preview of Multiple Regression-----------------------------------------------
+flights_subset <- flights %>% 
+  filter(carrier == "AS" | carrier == "F9") %>% 
+  left_join(weather, by=c("year", "month", "day", "hour", "origin")) %>% 
+  filter(dep_delay < 250) %>% 
+  mutate(summer = ifelse(month == 6 | month == 7 | month == 8, "Summer Flights", "Non-Summer Flights"))
+
+ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~summer)
+```
+
+---
+
+---
+
+class: inverse, center, middle
+
+# The Future
+
+---
+
+## The Immediate Future
+
+By July 1st, 2017
+
+* Complete Development of Chapters 6-9 on Simulations, Hypothesis Testing, Confidence Intervals, and Regression
+* Learning Checks: Discussion/solutions embedded directly in the textbook, that you can reveal progressively.
+* Have better [data frame printing](http://rmarkdown.rstudio.com/html_document_format.html#data_frame_printing). Instead of raw R code use
+    + Less jarring `knitr::kable()` output or
+    + Interactive table outputs, to partically replicate RStudio's `View()` function.
+
+---
+
+# The Longer Term
+
+* In Chapter 9: Regression
+    + Add more on categorical predictors
+    + Multiple regression
+
+---
+
+# The Longer Term
+
+## DataCamp
+
+- Continue to build supplementary materials for other disciplines
+  - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
+  - Add [DataCamp Light](https://github.com/datacamp/datacamp-light) chunks into the book to enable student practice right there inside the textbook via the `tutorial` [package](https://github.com/datacamp/tutorial)
+
+---
+
+# The Longer Term 
+
+## Implement Cognitive Science Research
+
+- Work on interleaving and spaced practice inside the textbook to improve student learning and retention
+- Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
+
+---
+
+# Longer Term 
+
+## Further Develop Interactive Applets
+
+- To help students visualize and understand inferential processes
+  - [Sampling app](https://ismay.shinyapps.io/okcupidheights/)
+  - [Probability Distribution Viewer and Calculator](http://ismay.shinyapps.io/ProbApp)
+- (MAYBE) Learn D3.js and create applets like those at [Seeing Theory](http://students.brown.edu/seeing-theory/)
+
+---
+
+
+class: inverse, center, middle
 
 # Introduction to `bookdown`
 
@@ -962,28 +1569,6 @@ ggplot(data = police_join_cost,
 ---
 
 ## What does it look like?
-
-<style>
-  #wrap {
-   width:900px;
-   margin:0 auto;
-  }
-
-  #left_col {
-   float:left;
-   width:550px;
-  }
-  
-  #right_col {
-   float:right;
-   width:350px;
-  }
-     
-</style>
-
-<!--<div id="wrap">
-  <div id="left_col">
--->
 
 .left-column[
 ```
@@ -1066,42 +1651,7 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 ---
 
-class: center, middle
+class: inverse, center, middle
 
 # DEMO with ModernDive Light
 
----
-
-class: center, middle
-
-# The Future
-
----
-
-# Longer Term
-
-## DataCamp
-
-- Continue to build supplementary materials for other disciplines
-  - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
-  - Add [DataCamp Light](https://github.com/datacamp/datacamp-light) chunks into the book to enable student practice right there inside the textbook via the `tutorial` [package](https://github.com/datacamp/tutorial)
-
----
-
-# Longer Term 
-
-## Implement Cognitive Science Research
-
-- Work on interleaving and spaced practice inside the textbook to improve student learning and retention
-- Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
-
----
-
-# Longer Term 
-
-## Further Develop Interactive Applets
-
-- To help students visualize and understand inferential processes
-  - [Sampling app](https://ismay.shinyapps.io/okcupidheights/)
-  - [Probability Distribution Viewer and Calculator](http://ismay.shinyapps.io/ProbApp)
-- (MAYBE) Learn D3.js and create applets like those at [Seeing Theory](http://students.brown.edu/seeing-theory/)
