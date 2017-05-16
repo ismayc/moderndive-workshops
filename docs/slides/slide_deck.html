@@ -1349,7 +1349,7 @@ gapminder %&gt;% filter(continent == "Asia") %&gt;%
 
 ## The pipe `%&gt;%`
 
-&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;![](figure/MagrittePipe.jpg)&lt;!-- --&gt;
+&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;&lt;img src="figure/MagrittePipe.jpg" width="504" /&gt;
 --
 
 - A way to chain together commands
@@ -1875,11 +1875,142 @@ class: inverse, center, middle
 
 ---
 
+## Statistical Inference
+
+We now enter the "traditional" topics of intro stats...
+
+1. Sampling theory
+1. Hypothesis testing
+1. Confidence intervals
+1. Regression
+
+---
+
+## Statistical Inference
+
+... but now armed with
+
+1. Data visualization
+1. Data wrangling skills
+1. **Most important**: comfort with coding!
+
+---
+
 ## Chapter 6: Sampling Highlights
+
+Sampling is at the root of statistics. Two approaches to understanding:
+
+&lt;br&gt;
+
+Either we use this...            |  Or we use this...
+:-------------------------:|:-------------------------:
+&lt;img src="figure/formulas.png" alt="Drawing" style="width: 250px;"/&gt;   |  &lt;img src="figure/coding.jpg" alt="Drawing" style="width: 250px;"/&gt; 
+
+&lt;br&gt;
+
+---
+
+## `mosaic` Package
+
+It has functions for random simulations:
+
+&lt;br&gt;
+
+1. `rflip()`: Flip a coin
+1. `shuffle()`: Shuffle a set of values
+1. `do()`: Do the same thing many, many, many times
+1. `resample()`: the **swiss army knife** for sampling
+
+---
+
+## Lady Tasting Tea
+
+&lt;center&gt;&lt;img src="figure/lady_tasting_tea.jpg" alt="Drawing" style="height: 500px;"/&gt;&lt;/center&gt;
+
+
+---
+
+## Presented to Students As:
+
+* Say you are a statistician and you meet someone called the "Lady Tasting Tea."
+* She claims she can tell by tasting whether the tea or the milk was added first to a cup.
+* You want to test whether
+    + She can actually tell which came first
+    + She's lying and is really guessing at random
+* Say you have just enough tea/milk to pour into 8 cups.
+
+---
+
+## Lady Tasting Tea
+
+The example will be built around this code:  (Available in the supplementary HTML document [here].)
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(mosaic)
+
+single_cup_guess &lt;- c(1, 0)
+simulation &lt;- do(10000) * resample(single_cup_guess, size=8, replace=TRUE)
+View(simulation)
+
+simulation &lt;- simulation %&gt;% 
+  mutate(n_correct = V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8) 
+View(simulation)
+
+ggplot(simulation, aes(x=n_correct)) + 
+  geom_bar() +
+  labs(x="Number of Guesses Correct", title="Number Correct Assuming She Is Guessing at Random") +
+  geom_vline(xintercept=8, col="red")
+```
+
+---
 
 ## Chapter 7: Hypothesis Testing Highlights
 
+**There is only one test; it has 5 components**:
+
+1. Define `\(H_0\)` and `\(H_A\)`
+1. Define the test statistic `\(\delta\)`
+1. Compute the observed test statistic `\(\delta^*\)`
+1. Construct the null distribution either
+    * Mathematically
+    * Via Simulation
+1. Compare `\(\delta^*\)` to null distribution to compute `\(p\)`-value
+
+---
+
+## Back to Lady Tasting Tea
+
+1. She is guessing at random vs she can tell which came first
+1. Test statistic: Number out of 8 shes guesses right
+1. Observed test statistic: 8 of 8. The red line!
+1. Null distribution: (simulated) bar graph!
+1. `\(p\)`-value: Very small! Above 0.36%
+
+---
+
+## Chi-Squared Goodness-of-Fit
+
+1. Observations fit expected distibution vs not
+1. Test statistic: `\(\sum_{i=1}^{k}\frac{\left(\mbox{Obs}_i-\mbox{Exp}_i\right)^2}{\mbox{Exp}_i}\)`
+1. Observed test statistic: Compute using data!
+1. Null Distribution: (mathematically derived) [Chi-Squared Dist'n](https://beta.rstudioconnect.com/connect/#/apps/2719/access).
+1. Area to the right!
+
+---
+
+## There is Only One Test
+
+&lt;center&gt;&lt;img src="figure/ht.png" alt="Drawing" style="width: 700px;"/&gt;&lt;/center&gt;
+
+---
+
+
 ## Chapter 8: Confidence Intervals Highlights
+
+
 
 ---
 
@@ -1913,7 +2044,7 @@ Involves four variables:
 
 ## 1. `ggplot2` Primes Regression
 
-![](slide_deck_files/figure-html/unnamed-chunk-53-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-54-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -2204,7 +2335,7 @@ ggplot(data = pdx_flights,
 [1] 88
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-56-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-57-1.png)&lt;!-- --&gt;
 ]
 
 ---
