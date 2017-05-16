@@ -13,7 +13,7 @@ class: center, middle, inverse, title-slide
 # A Fully Customizable Textbook for Introductory Statistics/Data Science
 ## USCOTS 2017 Workshop
 ### Chester Ismay and Albert Y. Kim
-### May 17 &amp; 18, 2017 <br><br> Slides available at <a href="http://bit.ly/uscots17-slides" class="uri">http://bit.ly/uscots17-slides</a>
+### May 17 &amp; 18, 2017 <br><br> Slides at <a href="http://bit.ly/uscots17-slides" class="uri">http://bit.ly/uscots17-slides</a> <br> Supplementary HTML document at <a href="http://bit.ly/uscots17-html" class="uri">http://bit.ly/uscots17-html</a>
 
 ---
 
@@ -60,9 +60,11 @@ class: center, middle
 ## ModernDive and Our Syllabi
 
 * ModernDive's guiding philosophies are deeply intertwined our syllabi
+
 --
 
 * Hard to speak of ModernDive in isolation from syllabi and vice-versa
+
 --
 
 * Numbers are numbers, but data has context...
@@ -85,6 +87,7 @@ class: center, middle
     + ~24 students/section of all years/backgrounds. Only stats class many will take
     + Background: Many had AP stats, some with programming
     + All had laptops that they brought everyday
+    
 ---
 
 ## Albert's Syllabus
@@ -217,6 +220,7 @@ Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): Two possible "computational
 engines" for statistics, in particular relating to sampling:
 
 * Mathematics: formulas, probability theory, large-sample approximations, central limit theorem
+
 --
 
 * Computers: simulations, resampling methods
@@ -238,6 +242,7 @@ Either we use this...            |  Or we use this...
 --
 
 * Almost all are thrilled to do the latter
+
 --
 
 * Leave "bread crumbs" for more advanced math/stats courses
@@ -300,7 +305,7 @@ class: center, middle, inverse
 
 ## Let's Dive In!
 
-&lt;a href="https://giphy.com/gifs/season-6-the-simpsons-6x1-l2Je1bFuOpkNpyqYM/"&gt;&lt;img src="figure/homer.gif" style="width: 600px;"/&gt;&lt;a&gt;
+&lt;a href="https://giphy.com/gifs/season-6-the-simpsons-6x1-l2Je1bFuOpkNpyqYM/"&gt;&lt;img src="figure/homer.gif" style="width: 600px;"/&gt;&lt;/a&gt;
 
 ---
 
@@ -364,8 +369,6 @@ Outsource many essential but not fun to teach topics like
 
 ---
 
-# Getting Started
-
 ## Chester's First Bookdown Project
 
 [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
@@ -374,8 +377,9 @@ Outsource many essential but not fun to teach topics like
 
 ---
 
-class: inverse
+class: inverse, center, middle
 
+## Short break?
 
 ---
 
@@ -398,11 +402,11 @@ class: center, middle
   
 The `tidyverse` is a collection of R packages that share common philosophies and are designed to work together. &lt;br&gt;&lt;br&gt; 
   
-&lt;a href="http://tidyverse.tidyverse.org/logo.png"&gt;&lt;img src="figure/tidyverse.png" style="width: 200px;"/&gt;&lt;a&gt;
+&lt;a href="http://tidyverse.tidyverse.org/logo.png"&gt;&lt;img src="figure/tidyverse.png" style="width: 200px;"/&gt;&lt;/a&gt;
 
 ---
 
-## What is Tidy Data?
+# Chapter 3: Tidy Data?
 
 &lt;img src="http://garrettgman.github.io/images/tidy-1.png" alt="Drawing" style="width: 750px;"/&gt;
 
@@ -453,90 +457,24 @@ class: center, middle
 
 ## Is this tidy?
 
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:right;"&gt; year &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; title &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; clean_test &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; budget_2013 &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1995 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Apollo 13 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; ok &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 99370665 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2005 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Brokeback Mountain &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; notalk &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16583160 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2010 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Diary of a Wimpy Kid &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; ok &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16023478 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1984 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Dune &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; dubious &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 100864980 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 1984 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Ghostbusters &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; notalk &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 67243320 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2003 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; How to Lose a Guy in 10 Days &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; men &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 63304348 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2011 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Iris &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; ok &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5696299 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2004 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Sideways &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; ok &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 20964279 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2000 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Songcatcher &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; ok &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2435235 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2004 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Team America: World Police &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; men &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 24663858 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2010 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Tron Legacy &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; notalk &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 213646368 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 2011 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; War Horse &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; notalk &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 72498355 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+
+```
+# A tibble: 12 × 4
+    year                        title clean_test budget_2013
+   &lt;int&gt;                        &lt;chr&gt;      &lt;chr&gt;       &lt;int&gt;
+1   1995                    Apollo 13         ok    99370665
+2   2005           Brokeback Mountain     notalk    16583160
+3   2010         Diary of a Wimpy Kid         ok    16023478
+4   1984                         Dune    dubious   100864980
+5   1984                 Ghostbusters     notalk    67243320
+6   2003 How to Lose a Guy in 10 Days        men    63304348
+7   2011                         Iris         ok     5696299
+8   2004                     Sideways         ok    20964279
+9   2000                  Songcatcher         ok     2435235
+10  2004   Team America: World Police        men    24663858
+11  2010                  Tron Legacy     notalk   213646368
+12  2011                    War Horse     notalk    72498355
+```
 
 
 ---
@@ -545,207 +483,26 @@ name: demscore
 
 ## How about this? Is this tidy?
 
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; country &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1952 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1957 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1962 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1967 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1972 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1977 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1982 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1987 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1992 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 1997 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 2002 &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; 2007 &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Albania &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Argentina &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Armenia &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Australia &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Austria &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Azerbaijan &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Belarus &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Belgium &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Bhutan &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -6 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Bolivia &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Brazil &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Bulgaria &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 9 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+
+```
+# A tibble: 12 × 13
+      country `1952` `1957` `1962` `1967` `1972` `1977` `1982` `1987`
+        &lt;chr&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;
+1     Albania     -9     -9     -9     -9     -9     -9     -9     -9
+2   Argentina     -9     -1     -1     -9     -9     -9     -8      8
+3     Armenia     -9     -7     -7     -7     -7     -7     -7     -7
+4   Australia     10     10     10     10     10     10     10     10
+5     Austria     10     10     10     10     10     10     10     10
+6  Azerbaijan     -9     -7     -7     -7     -7     -7     -7     -7
+7     Belarus     -9     -7     -7     -7     -7     -7     -7     -7
+8     Belgium     10     10     10     10     10     10     10     10
+9      Bhutan    -10    -10    -10    -10    -10    -10    -10    -10
+10    Bolivia     -4     -3     -3     -4     -7     -7      8      9
+11     Brazil      5      5      5     -9     -9     -4     -3      7
+12   Bulgaria     -7     -7     -7     -7     -7     -7     -7     -7
+# ... with 4 more variables: `1992` &lt;int&gt;, `1997` &lt;int&gt;, `2002` &lt;int&gt;,
+#   `2007` &lt;int&gt;
+```
 
 &lt;small&gt;&lt;small&gt;[Why is tidy data important?](#whytidy) slide&lt;/small&gt;&lt;/small&gt;
 
@@ -754,12 +511,14 @@ name: demscore
 ## Beginning steps
 
 Frequently the first thing to do when given a dataset is to
+
 - check that the data is &lt;u&gt;tidy&lt;/u&gt;,
 - identify the observational unit,
 - specify the variables, and
 - give the types of variables you are presented with.
 
 This will help with 
+
 - choosing the appropriate plot, 
 - summarizing the data, and 
 - understanding which inferences can be applied.
@@ -768,7 +527,7 @@ This will help with
 
 class: center, middle
 
-# On to Data Viz
+# Chapter 4: Data Viz
 
 &lt;a href="http://gitsense.github.io/images/wealth.gif"&gt;&lt;img src="figure/wealth.gif" style="width: 770px;"/&gt;&lt;/a&gt;
 
@@ -786,7 +545,7 @@ Inspired by [Hans Rosling](https://www.youtube.com/watch?v=jbkSRLYSojo)
 ---
 
 
-# Grammar of Graphics
+## Grammar of Graphics
 
 .left-column[
 Wilkinson (2005) laid out the proposed "Grammar of Graphics"
@@ -798,7 +557,7 @@ Wilkinson (2005) laid out the proposed "Grammar of Graphics"
 
 ---
 
-# Grammar of Graphics in R
+## Grammar of Graphics in R
 
 .left-column[
 Wickham implemented the grammar in R in the `ggplot2` package
@@ -827,7 +586,7 @@ class: center, middle
 
 class: inverse, center, middle
 
-# Back to basics
+## Back to basics
 
 ---
 
@@ -981,7 +740,7 @@ name: whytidy
 
 ---
 
-# Tidy is good
+## Tidy is good
 
 &lt;table&gt;
  &lt;thead&gt;
@@ -1062,7 +821,7 @@ name: whytidy
 
 ---
 
-# Let's plot it
+## Let's plot it
 
 - Plot the line graph for 4 countries using `ggplot`
 
@@ -1095,11 +854,11 @@ ggplot(data = dem_score4, mapping = aes(x = year, y = dem_score)) +
 
 class: center, middle
 
-# More examples
+## More examples
 
 ---
 
-# Histogram
+## Histogram
 
 
 ```r
@@ -1112,7 +871,7 @@ ggplot(data = weather, mapping = aes(x = humid)) +
 
 ---
 
-# Boxplot (broken)
+## Boxplot (broken)
 
 
 ```r
@@ -1126,7 +885,7 @@ ggplot(data = weather, mapping = aes(x = month, y = humid)) +
 ---
 
 
-# Boxplot (fixed)
+## Boxplot (fixed)
 
 
 ```r
@@ -1139,7 +898,7 @@ ggplot(data = weather, mapping = aes(x = factor(month), y = humid)) +
 
 ---
 
-# Bar graph
+## Bar graph
 
 
 ```r
@@ -1152,22 +911,7 @@ ggplot(data = bechdel, mapping = aes(x = clean_test)) +
 
 ---
 
-# Add to end
-
-
-```r
-library(forcats)
-library(fivethirtyeight)
-ggplot(data = bechdel, mapping = aes(x = clean_test %&gt;% fct_infreq %&gt;% fct_rev)) +
-  geom_bar()
-```
-
-![](slide_deck_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
-
-
----
-
-# How about over time?
+## How about over time?
 
 - Hop into `dplyr`
 
@@ -1199,7 +943,7 @@ ggplot(data = bechdel,
   geom_bar()
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -1214,7 +958,7 @@ ggplot(data = bechdel,
   geom_bar(position = "dodge")
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -1229,15 +973,15 @@ ggplot(data = bechdel,
   geom_bar(position = "fill", color = "black")
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
 
 ---
 
 class: center, middle
 
-# `ggplot2` is for beginners and &lt;br&gt; for data science professionals!
+## `ggplot2` is for beginners and for data science professionals!
 
-&lt;a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/"&gt;&lt;img src="figure/bechdel.png" style="width: 500px;"/&gt;&lt;a&gt;
+&lt;a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/"&gt;&lt;img src="figure/bechdel.png" width=500&gt;&lt;/a&gt;
 
 ---
 
@@ -1261,7 +1005,7 @@ Try to look through the help documentation/Google to improve your plots
 
 ### HINTS
 
-![](slide_deck_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
 
 
 
@@ -1269,7 +1013,7 @@ Try to look through the help documentation/Google to improve your plots
 
 class: inverse, center, middle
 
-# DEMO
+# DEMO in RStudio
 
 ---
 
@@ -1277,13 +1021,13 @@ class: center, middle
 
 ### Determining the appropriate plot
 
-&lt;a href="https://coggle.it/diagram/V_G2gzukTDoQ-aZt"&gt;&lt;img src="figure/viz_mindmap.png" style="width: 400px;"/&gt;&lt;a&gt;
+&lt;a href="https://coggle.it/diagram/V_G2gzukTDoQ-aZt"&gt;&lt;img src="figure/viz_mindmap.png" style="width: 400px;"/&gt;&lt;/a&gt;
 
 ---
 
 class: center, middle
 
-# Shifting to Data ~~Manipulation~~ Wrangling
+# Chapter 5: Data Wrangling
 
 ---
 
@@ -1349,7 +1093,7 @@ gapminder %&gt;% filter(continent == "Asia") %&gt;%
 
 ## The pipe `%&gt;%`
 
-&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;&lt;img src="figure/MagrittePipe.jpg" width="504" /&gt;
+&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;![](figure/MagrittePipe.jpg)&lt;!-- --&gt;
 --
 
 - A way to chain together commands
@@ -1359,18 +1103,20 @@ gapminder %&gt;% filter(continent == "Asia") %&gt;%
 
 ---
 
-# The 5NG of data viz
+## The 5NG of data viz
 --
 
 ### `geom_point()`&lt;br&gt; `geom_line()` &lt;br&gt; `geom_histogram()`&lt;br&gt;  `geom_boxplot()`&lt;br&gt; `geom_bar()`
 
 ---
-# The 5MV of data wrangling
+
+# The Five Main Verbs of data wrangling
+
 ### `filter()` &lt;br&gt; `summarize()` &lt;br&gt; `group_by()` &lt;br&gt; `mutate()` &lt;br&gt; `arrange()`
 
 ---
 
-# `filter()`
+## `filter()`
 
 - Select a subset of the rows of a data frame. 
 
@@ -1400,7 +1146,7 @@ head(gap_2007)
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `|` to check for any in multiple filters being true:
 --
@@ -1432,7 +1178,7 @@ gapminder %&gt;%
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `&amp;` or `,` to check for all of multiple filters being true:
 --
@@ -1463,7 +1209,7 @@ gapminder %&gt;%
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `%in%` to check for any being true &lt;br&gt; (shortcut to using `|` repeatedly with `==`)
 --
@@ -1492,7 +1238,7 @@ gapminder %&gt;%
 
 ---
 
-# `summarize()`
+## `summarize()`
 
 - Any numerical summary that you want to apply to a column of a data frame is specified within `summarize()`.
 
@@ -1557,11 +1303,11 @@ ggplot(data = max_exp_1997_by_cont,
   geom_col()
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-42-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
 ---
 
 
-# The 5MV
+## The 5MV
 
 - `filter()`
 - `summarize()`
@@ -1575,7 +1321,7 @@ ggplot(data = max_exp_1997_by_cont,
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. &lt;font color="blue"&gt;create a new variable with a specific value&lt;/font&gt; OR
@@ -1604,7 +1350,7 @@ head(gap_plus)
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. create a new variable with a specific value OR
@@ -1633,7 +1379,7 @@ head(gap_w_gdp)
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. create a new variable with a specific value OR
@@ -1662,7 +1408,7 @@ head(gap_weird)
 
 ---
 
-# `arrange()`
+## `arrange()`
 
 - Reorders the rows in a data frame based on the values of one or more variables
 --
@@ -1692,7 +1438,7 @@ gapminder %&gt;%
 
 ---
 
-# `arrange()`
+## `arrange()`
 
 - Can also put into descending order
 --
@@ -1706,7 +1452,7 @@ gapminder %&gt;%
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 - `group_by` is used (mostly) with `summarize` to calculate summaries over groups
 
@@ -1714,7 +1460,7 @@ gapminder %&gt;%
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 This doesn't really do anything useful
 
@@ -1744,7 +1490,7 @@ Groups: year [12]
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 But this does
 
@@ -1772,7 +1518,7 @@ gapminder %&gt;% arrange(year)
 
 ---
 
-# Changing of observation unit
+## Changing of observation unit
 
 True or False
 &gt; Each of `filter`, `mutate`, and `arrange` change the observational unit.
@@ -1788,7 +1534,7 @@ Draw diagram for average monthly temp aggregated like on rstudio::conf slides
 
 ---
 
-# What is meant by "joining data frames" and why is it useful?
+## What is meant by "joining data frames" and why is it useful?
 
 --
 
@@ -1865,7 +1611,31 @@ ggplot(data = police_join_cost,
   labs(x = "Cost of Living Index", y = "% Officers Living in City")
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-52-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-51-1.png)&lt;!-- --&gt;
+
+---
+
+
+## Practice
+
+Use the 5MV to answer problems from R data packages, e.g., [`nycflights13` `\(\rightarrow\)` `weather`] 
+
+&lt;!--
+Try to look through the help documentation/Google to improve your plots
+--&gt;
+
+1. What is the maximum arrival delay for each carrier departing JFK? &lt;br&gt; [`nycflights13` `\(\rightarrow\)` `flights`]
+
+2. Calculate the domestic return on investment for 2013 scaled data and sort from highest at the top to lowest at the bottom &lt;br&gt; [`fivethirtyeight` `\(\rightarrow\)` `bechdel`]
+
+3. Include the name of the `carrier` as a column in the `flights` data frame [`nycflights13` `\(\rightarrow\)` `flights`, `airlines`]
+
+---
+
+
+class: inverse, center, middle
+
+# DEMO in RStudio
 
 ---
 
@@ -1896,7 +1666,7 @@ We now enter the "traditional" topics of intro stats...
 
 ---
 
-## Chapter 6: Sampling Highlights
+# Chapter 6: Sampling Highlights
 
 Sampling is at the root of statistics. Two approaches to understanding:
 
@@ -1967,7 +1737,7 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
-## Chapter 7: Hypothesis Testing Highlights
+# Chapter 7: Hypothesis Testing Highlights
 
 **There is only one test; it has 5 components**:
 
@@ -2044,7 +1814,7 @@ Involves four variables:
 
 ## 1. `ggplot2` Primes Regression
 
-![](slide_deck_files/figure-html/unnamed-chunk-54-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-53-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -2215,7 +1985,7 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term
+## The Longer Term
 
 * In Chapter 9: Regression
     + Add more on categorical predictors
@@ -2223,9 +1993,9 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term
+## The Longer Term
 
-## DataCamp
+### DataCamp
 
 - Continue to build supplementary materials for other disciplines
   - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
@@ -2233,16 +2003,16 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term 
+## The Longer Term 
 
-## Implement Cognitive Science Research
+### Implement Cognitive Science Research
 
 - Work on interleaving and spaced practice inside the textbook to improve student learning and retention
 - Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
 
 ---
 
-# Longer Term 
+## The Longer Term 
 
 ## Further Develop Interactive Applets
 
@@ -2256,7 +2026,7 @@ By July 1st, 2017
 
 class: inverse, center, middle
 
-# Introduction to `bookdown`
+## Introduction to `bookdown`
 
 ---
 
@@ -2335,12 +2105,12 @@ ggplot(data = pdx_flights,
 [1] 88
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-57-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-56-1.png)&lt;!-- --&gt;
 ]
 
 ---
 
-# What is `bookdown`?
+## What is `bookdown`?
 
 From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
@@ -2350,7 +2120,7 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 class: inverse, center, middle
 
-# DEMO with ModernDive Light
+# DEMO of `bookdown` with ModernDive Light
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({

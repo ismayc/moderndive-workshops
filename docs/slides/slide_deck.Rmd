@@ -2,8 +2,17 @@
 title: A Fully Customizable Textbook for Introductory Statistics/Data Science
 subtitle: USCOTS 2017 Workshop
 author: Chester Ismay and Albert Y. Kim
-date: May 17 & 18, 2017 <br><br> Slides available at <http://bit.ly/uscots17-slides>
-output: 
+date: May 17 & 18, 2017 <br><br> Slides at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document at <http://bit.ly/uscots17-html>
+# output:
+#   html_document:
+#     toc: true
+#     toc_float: true
+#     toc_depth: 1
+#     theme: cosmo
+#     highlight: tango
+#     df_print: paged
+#     css: example2.css    
+output:
   xaringan::moon_reader:
     lib_dir: libs
     nature:
@@ -67,9 +76,11 @@ class: center, middle
 ## ModernDive and Our Syllabi
 
 * ModernDive's guiding philosophies are deeply intertwined our syllabi
+
 --
 
 * Hard to speak of ModernDive in isolation from syllabi and vice-versa
+
 --
 
 * Numbers are numbers, but data has context...
@@ -92,6 +103,7 @@ class: center, middle
     + ~24 students/section of all years/backgrounds. Only stats class many will take
     + Background: Many had AP stats, some with programming
     + All had laptops that they brought everyday
+    
 ---
 
 ## Albert's Syllabus
@@ -224,6 +236,7 @@ Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): Two possible "computational
 engines" for statistics, in particular relating to sampling:
 
 * Mathematics: formulas, probability theory, large-sample approximations, central limit theorem
+
 --
 
 * Computers: simulations, resampling methods
@@ -245,6 +258,7 @@ Either we use this...            |  Or we use this...
 --
 
 * Almost all are thrilled to do the latter
+
 --
 
 * Leave "bread crumbs" for more advanced math/stats courses
@@ -307,7 +321,7 @@ class: center, middle, inverse
 
 ## Let's Dive In!
 
-<a href="https://giphy.com/gifs/season-6-the-simpsons-6x1-l2Je1bFuOpkNpyqYM/"><img src="figure/homer.gif" style="width: 600px;"/><a>
+<a href="https://giphy.com/gifs/season-6-the-simpsons-6x1-l2Je1bFuOpkNpyqYM/"><img src="figure/homer.gif" style="width: 600px;"/></a>
 
 ---
 
@@ -371,8 +385,6 @@ Outsource many essential but not fun to teach topics like
 
 ---
 
-# Getting Started
-
 ## Chester's First Bookdown Project
 
 [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
@@ -381,8 +393,9 @@ Outsource many essential but not fun to teach topics like
 
 ---
 
-class: inverse
+class: inverse, center, middle
 
+## Short break?
 
 ---
 
@@ -405,11 +418,11 @@ class: center, middle
   
 The `tidyverse` is a collection of R packages that share common philosophies and are designed to work together. <br><br> 
   
-<a href="http://tidyverse.tidyverse.org/logo.png"><img src="figure/tidyverse.png" style="width: 200px;"/><a>
+<a href="http://tidyverse.tidyverse.org/logo.png"><img src="figure/tidyverse.png" style="width: 200px;"/></a>
 
 ---
 
-## What is Tidy Data?
+# Chapter 3: Tidy Data?
 
 <img src="http://garrettgman.github.io/images/tidy-1.png" alt="Drawing" style="width: 750px;"/>
 
@@ -465,8 +478,7 @@ library(fivethirtyeight)
 set.seed(2)
 bechdel %>% sample_n(12) %>%
   select(year, title, clean_test, budget_2013) %>%
-  arrange(title) %>%
-  kable(format = "html")
+  arrange(title)
 ```
 
 
@@ -478,7 +490,7 @@ name: demscore
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 dem_score <- read_csv("data/dem_score.csv")
-knitr::kable(dem_score %>% slice(1:12), format = "html")
+dem_score %>% slice(1:12)
 ```
 
 <small><small>[Why is tidy data important?](#whytidy) slide</small></small>
@@ -488,12 +500,14 @@ knitr::kable(dem_score %>% slice(1:12), format = "html")
 ## Beginning steps
 
 Frequently the first thing to do when given a dataset is to
+
 - check that the data is <u>tidy</u>,
 - identify the observational unit,
 - specify the variables, and
 - give the types of variables you are presented with.
 
 This will help with 
+
 - choosing the appropriate plot, 
 - summarizing the data, and 
 - understanding which inferences can be applied.
@@ -502,7 +516,7 @@ This will help with
 
 class: center, middle
 
-# On to Data Viz
+# Chapter 4: Data Viz
 
 <a href="http://gitsense.github.io/images/wealth.gif"><img src="figure/wealth.gif" style="width: 770px;"/></a>
 
@@ -535,7 +549,7 @@ gapminder %>% filter(year == 1992) %>%
 ---
 
 
-# Grammar of Graphics
+## Grammar of Graphics
 
 .left-column[
 Wilkinson (2005) laid out the proposed "Grammar of Graphics"
@@ -547,7 +561,7 @@ Wilkinson (2005) laid out the proposed "Grammar of Graphics"
 
 ---
 
-# Grammar of Graphics in R
+## Grammar of Graphics in R
 
 .left-column[
 Wickham implemented the grammar in R in the `ggplot2` package
@@ -576,7 +590,7 @@ class: center, middle
 
 class: inverse, center, middle
 
-# Back to basics
+## Back to basics
 
 ---
 
@@ -715,7 +729,7 @@ name: whytidy
 
 ---
 
-# Tidy is good
+## Tidy is good
 
 ```{r echo=FALSE}
 dem_score_tidy <- dem_score %>% 
@@ -728,7 +742,7 @@ dem_score_tidy %>% sample_n(13) %>% arrange(country) %>%
 
 ---
 
-# Let's plot it
+## Let's plot it
 
 - Plot the line graph for 4 countries using `ggplot`
 
@@ -758,11 +772,11 @@ ggplot(data = dem_score4, mapping = aes(x = year, y = dem_score)) +
 
 class: center, middle
 
-# More examples
+## More examples
 
 ---
 
-# Histogram
+## Histogram
 
 ```{r fig.height=5.5}
 library(nycflights13)
@@ -772,7 +786,7 @@ ggplot(data = weather, mapping = aes(x = humid)) +
 
 ---
 
-# Boxplot (broken)
+## Boxplot (broken)
 
 ```{r fig.height=5.5}
 library(nycflights13)
@@ -783,7 +797,7 @@ ggplot(data = weather, mapping = aes(x = month, y = humid)) +
 ---
 
 
-# Boxplot (fixed)
+## Boxplot (fixed)
 
 ```{r fig.height=5.5}
 library(nycflights13)
@@ -793,7 +807,7 @@ ggplot(data = weather, mapping = aes(x = factor(month), y = humid)) +
 
 ---
 
-# Bar graph
+## Bar graph
 
 ```{r}
 library(fivethirtyeight)
@@ -803,19 +817,7 @@ ggplot(data = bechdel, mapping = aes(x = clean_test)) +
 
 ---
 
-# Add to end
-
-```{r}
-library(forcats)
-library(fivethirtyeight)
-ggplot(data = bechdel, mapping = aes(x = clean_test %>% fct_infreq %>% fct_rev)) +
-  geom_bar()
-```
-
-
----
-
-# How about over time?
+## How about over time?
 
 - Hop into `dplyr`
 
@@ -873,9 +875,9 @@ ggplot(data = bechdel,
 
 class: center, middle
 
-# `ggplot2` is for beginners and <br> for data science professionals!
+## `ggplot2` is for beginners and for data science professionals!
 
-<a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/"><img src="figure/bechdel.png" style="width: 500px;"/><a>
+<a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/"><img src="figure/bechdel.png" width=500></a>
 
 ---
 
@@ -928,7 +930,7 @@ grid.arrange(p1, p2, p3, p4, ncol = 2, padding = unit(0.5, "line"),
 
 class: inverse, center, middle
 
-# DEMO
+# DEMO in RStudio
 
 ---
 
@@ -936,13 +938,13 @@ class: center, middle
 
 ### Determining the appropriate plot
 
-<a href="https://coggle.it/diagram/V_G2gzukTDoQ-aZt"><img src="figure/viz_mindmap.png" style="width: 400px;"/><a>
+<a href="https://coggle.it/diagram/V_G2gzukTDoQ-aZt"><img src="figure/viz_mindmap.png" style="width: 400px;"/></a>
 
 ---
 
 class: center, middle
 
-# Shifting to Data ~~Manipulation~~ Wrangling
+# Chapter 5: Data Wrangling
 
 ---
 
@@ -987,18 +989,20 @@ gapminder %>% filter(continent == "Asia") %>%
 
 ---
 
-# The 5NG of data viz
+## The 5NG of data viz
 --
 
 ### `geom_point()`<br> `geom_line()` <br> `geom_histogram()`<br>  `geom_boxplot()`<br> `geom_bar()`
 
 ---
-# The 5MV of data wrangling
+
+# The Five Main Verbs of data wrangling
+
 ### `filter()` <br> `summarize()` <br> `group_by()` <br> `mutate()` <br> `arrange()`
 
 ---
 
-# `filter()`
+## `filter()`
 
 - Select a subset of the rows of a data frame. 
 
@@ -1015,7 +1019,7 @@ head(gap_2007)
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `|` to check for any in multiple filters being true:
 --
@@ -1033,7 +1037,7 @@ gapminder %>%
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `&` or `,` to check for all of multiple filters being true:
 --
@@ -1050,7 +1054,7 @@ gapminder %>%
 
 ---
 
-# Logical operators
+## Logical operators
 
 - Use `%in%` to check for any being true <br> (shortcut to using `|` repeatedly with `==`)
 --
@@ -1071,7 +1075,7 @@ gapminder %>%
 
 ---
 
-# `summarize()`
+## `summarize()`
 
 - Any numerical summary that you want to apply to a column of a data frame is specified within `summarize()`.
 
@@ -1130,7 +1134,7 @@ ggplot(data = max_exp_1997_by_cont,
 ---
 
 
-# The 5MV
+## The 5MV
 
 - `filter()`
 - `summarize()`
@@ -1144,7 +1148,7 @@ ggplot(data = max_exp_1997_by_cont,
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. <font color="blue">create a new variable with a specific value</font> OR
@@ -1160,7 +1164,7 @@ head(gap_plus)
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. create a new variable with a specific value OR
@@ -1176,7 +1180,7 @@ head(gap_w_gdp)
 
 ---
 
-# `mutate()`
+## `mutate()`
 
 - Allows you to 
     1. create a new variable with a specific value OR
@@ -1192,7 +1196,7 @@ head(gap_weird)
 
 ---
 
-# `arrange()`
+## `arrange()`
 
 - Reorders the rows in a data frame based on the values of one or more variables
 --
@@ -1204,7 +1208,7 @@ gapminder %>%
 
 ---
 
-# `arrange()`
+## `arrange()`
 
 - Can also put into descending order
 --
@@ -1217,7 +1221,7 @@ gapminder %>%
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 - `group_by` is used (mostly) with `summarize` to calculate summaries over groups
 
@@ -1225,7 +1229,7 @@ gapminder %>%
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 This doesn't really do anything useful
 
@@ -1235,7 +1239,7 @@ gapminder %>% group_by(year)
 
 ---
 
-# Don't mix up `arrange` and `group_by`
+## Don't mix up `arrange` and `group_by`
 
 But this does
 
@@ -1245,7 +1249,7 @@ gapminder %>% arrange(year)
 
 ---
 
-# Changing of observation unit
+## Changing of observation unit
 
 True or False
 > Each of `filter`, `mutate`, and `arrange` change the observational unit.
@@ -1261,7 +1265,7 @@ Draw diagram for average monthly temp aggregated like on rstudio::conf slides
 
 ---
 
-# What is meant by "joining data frames" and why is it useful?
+## What is meant by "joining data frames" and why is it useful?
 
 --
 
@@ -1302,6 +1306,30 @@ ggplot(data = police_join_cost,
 
 ---
 
+
+## Practice
+
+Use the 5MV to answer problems from R data packages, e.g., [`nycflights13` $\rightarrow$ `weather`] 
+
+<!--
+Try to look through the help documentation/Google to improve your plots
+-->
+
+1. What is the maximum arrival delay for each carrier departing JFK? <br> [`nycflights13` $\rightarrow$ `flights`]
+
+2. Calculate the domestic return on investment for 2013 scaled data and sort from highest at the top to lowest at the bottom <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
+
+3. Include the name of the `carrier` as a column in the `flights` data frame [`nycflights13` $\rightarrow$ `flights`, `airlines`]
+
+---
+
+
+class: inverse, center, middle
+
+# DEMO in RStudio
+
+---
+
 class: inverse, center, middle
 
 # Statistical Inference
@@ -1329,7 +1357,7 @@ We now enter the "traditional" topics of intro stats...
 
 ---
 
-## Chapter 6: Sampling Highlights
+# Chapter 6: Sampling Highlights
 
 Sampling is at the root of statistics. Two approaches to understanding:
 
@@ -1399,7 +1427,7 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
-## Chapter 7: Hypothesis Testing Highlights
+# Chapter 7: Hypothesis Testing Highlights
 
 **There is only one test; it has 5 components**:
 
@@ -1643,7 +1671,7 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term
+## The Longer Term
 
 * In Chapter 9: Regression
     + Add more on categorical predictors
@@ -1651,9 +1679,9 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term
+## The Longer Term
 
-## DataCamp
+### DataCamp
 
 - Continue to build supplementary materials for other disciplines
   - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
@@ -1661,16 +1689,16 @@ By July 1st, 2017
 
 ---
 
-# The Longer Term 
+## The Longer Term 
 
-## Implement Cognitive Science Research
+### Implement Cognitive Science Research
 
 - Work on interleaving and spaced practice inside the textbook to improve student learning and retention
 - Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
 
 ---
 
-# Longer Term 
+## The Longer Term 
 
 ## Further Develop Interactive Applets
 
@@ -1684,7 +1712,7 @@ By July 1st, 2017
 
 class: inverse, center, middle
 
-# Introduction to `bookdown`
+## Introduction to `bookdown`
 
 ---
 
@@ -1773,7 +1801,7 @@ ggplot(data = pdx_flights,
 
 ---
 
-# What is `bookdown`?
+## What is `bookdown`?
 
 From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
@@ -1783,5 +1811,5 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 class: inverse, center, middle
 
-# DEMO with ModernDive Light
+# DEMO of `bookdown` with ModernDive Light
 
