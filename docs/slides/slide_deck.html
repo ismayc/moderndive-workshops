@@ -406,7 +406,7 @@ class: center, middle
 ```
 # A tibble: 12 × 4
     year                        title clean_test budget_2013
-   &lt;int&gt;                        &lt;chr&gt;     &lt;fctr&gt;       &lt;int&gt;
+   &lt;int&gt;                        &lt;chr&gt;      &lt;chr&gt;       &lt;int&gt;
 1   1995                    Apollo 13         ok    99370665
 2   2005           Brokeback Mountain     notalk    16583160
 3   2010         Diary of a Wimpy Kid         ok    16023478
@@ -957,7 +957,7 @@ gapminder %&gt;% filter(continent == "Asia") %&gt;%
 
 ## The pipe `%&gt;%`
 
-&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;![](figure/MagrittePipe.jpg)&lt;!-- --&gt;
+&lt;img src="figure/pipe.png" width="245" /&gt; &amp;emsp; &amp;emsp;&lt;img src="figure/MagrittePipe.jpg" width="504" /&gt;
 --
 
 - A way to chain together commands
@@ -1642,6 +1642,33 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
+## Two-Sample Permutation Test
+
+Posed to students: Did students with an even # of letters in last name do better
+than those with odd #? (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_7:_hypothesis_testing_highlights).)
+
+
+```r
+library(tidyverse)
+library(mosaic)
+grades &lt;- read_csv("https://raw.githubusercontent.com/ismayc/moderndive-workshops/master/docs/slides/data/grades.csv")
+View(grades)
+
+# Observed Difference: Using mosaic package's mean function
+observed_diff &lt;- mean(final ~ even_vs_odd, data=grades) %&gt;% diff()
+
+null_distribution &lt;- (do(1000) * mean(final ~ shuffle(even_vs_odd), data=grades)) %&gt;%
+  mutate(difference=odd-even)
+View(null_distribution)
+
+# Plot
+ggplot(data=null_distribution , aes(x=difference)) +
+  geom_histogram(binwidth = 0.025) +
+  labs(x="Avg of Odds - Avg of Evens") +
+  geom_vline(xintercept = observed_diff, col="red")
+```
+
+---
 
 # Chapter 8: Confidence Intervals Highlights
 
@@ -1744,7 +1771,7 @@ Involves four variables:
 
 ## 1. `ggplot2` Primes Regression
 
-![](slide_deck_files/figure-html/unnamed-chunk-54-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-55-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -2019,7 +2046,7 @@ ggplot(data = pdx_flights,
 [1] 88
 ```
 
-![](slide_deck_files/figure-html/unnamed-chunk-57-1.png)&lt;!-- --&gt;
+![](slide_deck_files/figure-html/unnamed-chunk-58-1.png)&lt;!-- --&gt;
 ]
 
 ---

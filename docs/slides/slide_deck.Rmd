@@ -1420,6 +1420,32 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
+## Two-Sample Permutation Test
+
+Posed to students: Did students with an even # of letters in last name do better
+than those with odd #? (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_7:_hypothesis_testing_highlights).)
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(mosaic)
+grades <- read_csv("https://raw.githubusercontent.com/ismayc/moderndive-workshops/master/docs/slides/data/grades.csv")
+View(grades)
+
+# Observed Difference: Using mosaic package's mean function
+observed_diff <- mean(final ~ even_vs_odd, data=grades) %>% diff()
+
+null_distribution <- (do(1000) * mean(final ~ shuffle(even_vs_odd), data=grades)) %>%
+  mutate(difference=odd-even)
+View(null_distribution)
+
+# Plot
+ggplot(data=null_distribution , aes(x=difference)) +
+  geom_histogram(binwidth = 0.025) +
+  labs(x="Avg of Odds - Avg of Evens") +
+  geom_vline(xintercept = observed_diff, col="red")
+```
+
+---
 
 # Chapter 8: Confidence Intervals Highlights
 

@@ -70,43 +70,23 @@ class: center, middle
 * Webpage: <http://moderndive.com>. [GitHub Repo](https://github.com/ismayc/moderndiver-book)
 * In you haven't already, please [signup](http://moderndive.us15.list-manage2.com/subscribe?u=87888fab720da90906427a5be&id=0c9e2d1df2) for our mailing list!
 
----
 
-## ModernDive and Our Syllabi
-
-* ModernDive's guiding philosophies are deeply intertwined our syllabi
-
---
-
-* Hard to speak of ModernDive in isolation from syllabi and vice-versa
-
---
-
-* Numbers are numbers, but data has context...
 
 ---
 
-## Albert's Course (Introduction to Statistical & Data Sciences)
+## Albert's Course (Intro to Statistical & Data Sciences)
+
+Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#introduction).
 
 * [Webpage](https://rudeboybert.github.io/MATH116/) and [GitHub Repo](https://github.com/rudeboybert/MATH116)
 * Administrative:
     + Chief non-econ/bio stats service class at Middlebury
     + 12 weeks each with 3h "lecture" + 1h "lab"
     + <u>No prerequisites</u>
-
----
-    
-## Albert's Course (Introduction to Statistical & Data Sciences)
-
 * Students:
     + ~24 students/section of all years/backgrounds. Only stats class many will take
     + Background: Many had AP stats, some with programming
     + All had laptops that they brought everyday
-    
----
-
-## Albert's Syllabus
-
 * [Topic List](https://rudeboybert.github.io/MATH116/)
     + <u>First half is data science</u>: data visualization, manipulation, importing
     + <u>Second half is intro stats</u>: sampling, hypothesis tests, CI, regression
@@ -115,19 +95,16 @@ class: center, middle
     + 10%: engagement
     + 45%: 3 midterms (last during finals week)
     + <u>35%: [Final projects](https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#learning_goals)</u>
+* Typical Classtime:
+    + First 10-15min: Priming topic, either via slides or <u>chalk talk</u>
+    + Remainder: Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
 
----
-
-## Albert's Typical Classtime
-
-* First 10-15min: Priming topic, either via slides or <u>chalk talk</u>
-* Remainder: Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
-
-<center><img src="figure/group_1.jpg" width="400px"/></center>
 
 ---
 
 ## Chester's Course (Social Statistics)
+
+Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#introduction)
 
 * [Webpage at <http://bit.ly/soc-301>](https://ismayc.github.io/soc301_s2017/)  and [GitHub Repo](https://github.com/ismayc/soc301_s2017)
 * Administrative:
@@ -135,20 +112,10 @@ class: center, middle
     + An option take to fulfill the Pacific U. math requirement
     + 14 weeks, meeting on Tues & Thurs for 95 minutes
     + <u>No prerequisites</u>
-    
----
-
-## Chester's Course (Social Statistics)
-    
 * Students:
     + 26 students of all years/backgrounds. Only stats class many will take
     + Background: 3 had AP stats, zero with programming
     + All had laptops that they brought everyday
-
----
-
-## Chester's Syllabus
-
 * [Course Schedule](https://ismayc.github.io/soc301_s2017/schedule/)
     + <u>First half is data science</u>: data visualization, wrangling, importing
     + <u>Second half is intro stats</u>: sampling, testing, CI
@@ -159,17 +126,13 @@ class: center, middle
     + 20%: Pencil-and-paper Midterm Exam
     + 25%: (5) Multiple choice cumulative quizzes
     + 25%: Cumulative Pencil-and-paper Final Exam
-
----
-
-## Chester's Typical Classtime
-
-* First 5-10min: Students answer warmup exercise based on previous content
-* Next 10-20min: Review reading assignment via [slides](http://ismayc.github.io/soc301_s2017/slides/slide_deck.html)
-* Bulk of class: 
-    - Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
-    - Students work on next DataCamp problems and ask questions as needed
-* Last 5-10min:  Go over warmup exercise again or quiz students on material from that period   
+* Typical Classtime:
+    + First 5-10min: Students answer warmup exercise based on previous content
+    + Next 10-20min: Review reading assignment via [slides](http://ismayc.github.io/soc301_s2017/slides/slide_deck.html)
+    + Bulk of class: 
+        - Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
+        - Students work on next DataCamp problems and ask questions as needed
+    + Last 5-10min:  Go over warmup exercise again or quiz students on material from that period   
 
 ---
 
@@ -181,13 +144,6 @@ class: center, middle
 1. Complete reproducibility
 
 
-<!--
-## 1) Data First!
-
-Actual dialogue I had with a student:
-
-![](figure/dialogue_1.png)
--->
 
 ---
 
@@ -198,13 +154,6 @@ Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): *Minimizing prerequisites t
 ![](figure/pipeline.png)
 
 
----
-
-## 1) Data First!
-
-... and not just this part. 
-
-![](figure/pipeline2.png)
 
 ---
 
@@ -292,22 +241,16 @@ Why should we do this?
 
 * Data science and machine learning.
 * Where statistics is heading. Gelman [blog post](http://andrewgelman.com/2017/05/14/computer-programming-prerequisite-learning-statistics/).
-* Many new tools, like DataCamp, allow us to outsource needed practice with instant feedback.
-* We are doing a disservice to students by shielding them from these computational ideas.
+* If we don't, we are doing a disservice to students by shielding them from these computational ideas.
+* Bigger picture: Coding is becoming a basic skill like reading and writing.
 
----
 
-## 3) Algorithms, Computation, & Coding
-
-* Bigger picture:
-    + Coding is becoming a basic skill like reading and writing.
-    + Data analysis, as opposed to algorithms and data structures, could attract more students from traditionally underrepresented groups.
 
 ---
 
 ## 4) Complete Reproducibility
 
-* Students learn best when they can take can apart a toy (analysis) and then rebuild it (synthesis).
+* Students learn best when they can take apart a toy (analysis) and then rebuild it (synthesis).
 * Crisis in Reproducibility
 * Ultimately the best textbook is one you've written yourself.
     + Everyone has different contexts, backgrounds, needs
@@ -375,7 +318,7 @@ Outsource many essential but not fun to teach topics like
 
 ## DataCamp Conclusion
 
-* Not a good tool for "quick retention", but for R concept introduction and subsequent repetition.
+* Not a good tool for "quick retention," but for R concept introduction and subsequent repetition.
   + Students need to practice "speaking the language" just like with a foreign language.
 * [Feedback](https://docs.google.com/spreadsheets/d/1qUwt-v-xAQJ-1OTzMI2Q27McXG_3yXO5Qe9p-jz6BA8/edit) from students was positive.
 * Battle is more psychological than anything. DataCamp reinforces to students that
@@ -551,17 +494,23 @@ class: center, middle
 
 ## Grammar of Graphics
 
-Wilkinson (2005) laid out the proposed "Grammar of Graphics"
+Wilkinson (2005) laid out the proposed <br> "Grammar of Graphics"
 
-<a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 300px;"></a>
+<br>
+
+<a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 200px;"></a>
 
 ---
 
+class: center, middle
+
 ## Grammar of Graphics in R
 
-Wickham implemented the grammar in R in the `ggplot2` package
+Wickham implemented the grammar in R <br> in the `ggplot2` package
 
-<a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 300px;"></a>
+<br>
+
+<a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 200px;"></a>
 
 ---
 
@@ -636,7 +585,7 @@ ggplot(data = simple_ex, aes(x = A, y = B)) +
 
 ## Reproducing the plots in <small>`ggplot2`</small>
 
-### 2. A scatter plot where the `color` of the points corresponds to `group`
+### 2. A scatter plot where the `color` of the points corresponds to `D`
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1210,10 +1159,11 @@ gapminder %>%
 - Can also put into descending order
 --
 
-```{r desc, results="hide"}
+```{r desc}
 gapminder %>%
   filter(year > 2000) %>%
-  arrange(desc(lifeExp))
+  arrange(desc(lifeExp)) %>%
+  head(10)
 ```
 
 ---
@@ -1264,7 +1214,9 @@ Draw diagram for average monthly temp aggregated like on rstudio::conf slides
 
 ---
 
-## What is meant by "joining data frames" and why is it useful?
+class: center
+
+## What is meant by "joining data frames" and <br> why is it useful?
 
 --
 
@@ -1281,7 +1233,7 @@ library(fivethirtyeight)
 library(readr)
 ideology <- read_csv("https://ismayc.github.io/Effective-Data-Storytelling-using-the-tidyverse/datasets/ideology.csv")
 police_join <- inner_join(x = police_locals, y = ideology, by = "city")
-police_join
+rmarkdown::paged_table(police_join)
 ```
 
 ---
@@ -1289,7 +1241,7 @@ police_join
 ```{r}
 cost_of_living <- read_csv("https://ismayc.github.io/Effective-Data-Storytelling-using-the-tidyverse/datasets/cost_of_living.csv")
 police_join_cost <- inner_join(x = police_join, y = cost_of_living, by = "state")
-police_join_cost
+rmarkdown::paged_table(police_join_cost)
 ```
 
 ---
@@ -1311,14 +1263,14 @@ ggplot(data = police_join_cost,
 Use the 5MV to answer problems from R data packages, e.g., [`nycflights13` $\rightarrow$ `weather`] 
 
 <!--
-Try to look through the help documentation/Google to improve your plots
+Lay out what the resulting table should look like on paper first.
 -->
 
-1. What is the maximum arrival delay for each carrier departing JFK? <br> [`nycflights13` $\rightarrow$ `flights`]
+1. What is the maximum arrival delay for each carrier departing JFK? [`nycflights13` $\rightarrow$ `flights`]
 
-2. Calculate the domestic return on investment for 2013 scaled data and sort from highest at the top to lowest at the bottom <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
+2. Calculate the domestic return on investment for 2013 scaled data descending by ROI <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
 
-3. Include the name of the `carrier` as a column in the `flights` data frame [`nycflights13` $\rightarrow$ `flights`, `airlines`]
+3. Include the name of the `carrier` as a column in the `flights` data frame <br> [`nycflights13` $\rightarrow$ `flights`, `airlines`]
 
 ---
 
@@ -1348,7 +1300,7 @@ We now enter the "traditional" topics of intro stats...
 
 ## Statistical Inference
 
-... but now armed with
+... but now students are armed with
 
 1. Data visualization
 1. Data wrangling skills
@@ -1358,13 +1310,13 @@ We now enter the "traditional" topics of intro stats...
 
 # Chapter 6: Sampling Highlights
 
-Sampling is at the root of statistics. Two approaches to understanding:
+Sampling is at the root of statistics. Two approaches:
 
 <br>
 
 Either we use this...            |  Or we use this...
 :-------------------------:|:-------------------------:
-<img src="figure/formulas.png" alt="Drawing" style="width: 250px;"/>   |  <img src="figure/coding.jpg" alt="Drawing" style="width: 250px;"/> 
+<img src="figure/formulas.png" alt="Drawing" style="width: 300px;"/>   |  <img src="figure/coding.jpg" alt="Drawing" style="width: 300px;"/> 
 
 <br>
 
@@ -1385,7 +1337,7 @@ It has functions for random simulations:
 
 ## Lady Tasting Tea
 
-<center><img src="figure/lady_tasting_tea.jpg" alt="Drawing" style="height: 500px;"/></center>
+<center><img src="figure/lady_tasting_tea.jpg" alt="Drawing" style="height: 450px;"/></center>
 
 
 ---
@@ -1403,7 +1355,7 @@ It has functions for random simulations:
 
 ## Lady Tasting Tea
 
-The example will be built around this code:  (Available in the supplementary HTML document [here].)
+The example will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_6:_sampling_highlights).)
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1435,27 +1387,27 @@ ggplot(simulation, aes(x=n_correct)) +
 1. Compute the observed test statistic $\delta^*$
 1. Construct the null distribution either
     * Mathematically
-    * Via Simulation
-1. Compare $\delta^*$ to null distribution to compute $p$-value
+    * **Via Simulation**
+1. Compare $\delta^*$ to null distribution to compute p-value
 
 ---
 
-## Back to Lady Tasting Tea
+## There is Only One Test: Lady Tasting Tea
 
 1. She is guessing at random vs she can tell which came first
 1. Test statistic: Number out of 8 shes guesses right
 1. Observed test statistic: 8 of 8. The red line!
 1. Null distribution: (simulated) bar graph!
-1. $p$-value: Very small! Above 0.36%
+1. p-value: Very small! Above 0.36%
 
 ---
 
-## Chi-Squared Goodness-of-Fit
+## There is Only One Test: Goodness-of-Fit
 
 1. Observations fit expected distibution vs not
 1. Test statistic: $\sum_{i=1}^{k}\frac{\left(\mbox{Obs}_i-\mbox{Exp}_i\right)^2}{\mbox{Exp}_i}$
 1. Observed test statistic: Compute using data!
-1. Null Distribution: (mathematically derived) [Chi-Squared Dist'n](https://beta.rstudioconnect.com/connect/#/apps/2719/access).
+1. Null Distribution: (mathematically derived) <br> [Chi-Squared Dist'n](https://beta.rstudioconnect.com/connect/#/apps/2719/access).
 1. Area to the right!
 
 ---
@@ -1464,12 +1416,104 @@ ggplot(simulation, aes(x=n_correct)) +
 
 <center><img src="figure/ht.png" alt="Drawing" style="width: 700px;"/></center>
 
+- Created by [Allen Downey](http://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
+
 ---
 
+## Two-Sample Permutation Test
+
+Posed to students: Did students with an even # of letters in last name do better
+than those with odd #? (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_7:_hypothesis_testing_highlights).)
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(mosaic)
+grades <- read_csv("https://raw.githubusercontent.com/ismayc/moderndive-workshops/master/docs/slides/data/grades.csv")
+View(grades)
+
+# Observed Difference: Using mosaic package's mean function
+observed_diff <- mean(final ~ even_vs_odd, data=grades) %>% diff()
+
+null_distribution <- (do(1000) * mean(final ~ shuffle(even_vs_odd), data=grades)) %>%
+  mutate(difference=odd-even)
+View(null_distribution)
+
+# Plot
+ggplot(data=null_distribution , aes(x=difference)) +
+  geom_histogram(binwidth = 0.025) +
+  labs(x="Avg of Odds - Avg of Evens") +
+  geom_vline(xintercept = observed_diff, col="red")
+```
+
+---
 
 # Chapter 8: Confidence Intervals Highlights
 
+* Not only show students repeated sampling (with a Shiny app for example), let them repeatedly sample!
+* In other words, let them construct sampling distributions.
 
+---
+  
+## Sampling Distribution, SE, & C.I. Example
+  
+The example will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_8:_confidence_intervals_highlights.))
+
+1. Discuss with your seatmates what all 5 code parts below are doing.
+1. Try increasing `n` and repeating. What does this correspond to doing in real life?
+1. How does the histogram change?
+1. Describe using statistical language the role `n` plays when it comes to estimating $\mu$.
+
+<br><br>
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(mosaic)
+library(okcupiddata)
+data(profiles)
+
+# For simplicity, remove 3 individuals who did not list their height
+profiles <- profiles %>% 
+  filter(!is.na(height))
+
+# Population mean
+mu <- mean(profiles$height)
+
+# Sample size:
+n <- 5
+
+# Parts 1 & 2:
+resample(profiles$height, size=n, replace=TRUE)
+mean(resample(profiles$height, size=n, replace=TRUE))
+
+# Part 3:
+samples <- do(10000) * mean(resample(profiles$height, size=n, replace=TRUE))
+View(samples)
+
+# Part 4:
+ggplot(samples, aes(x=mean)) +
+  geom_histogram(binwidth = 1) +
+  labs(x="sample mean") + 
+  xlim(c(50,80)) +
+  geom_vline(xintercept=mu, col="red")
+
+# Part 5:
+sd(samples$mean)
+```
+
+
+---
+  
+## The Hard Part
+
+Convincing students:
+
+* We only do the blue via simulation *as a theoretical exercise*
+* We do the purple in *real life*
+
+<br>
+
+<center><img src="figure/SE.png" alt="Drawing" style="width: 800px;"/></center>
 
 ---
 
@@ -1558,7 +1602,7 @@ In our case, `broom` functions take `lm` objects as inputs and return the follow
 
 ## 2. `broom` Package
 
-The chapter will be built around this code:  (Available in the supplementary HTML document [here].)
+The chapter will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_9:_regression_highlights)).
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1637,17 +1681,15 @@ ggplot(data = regression_points, mapping = aes(sample = .resid)) +
 # Preview of Multiple Regression-----------------------------------------------
 flights_subset <- flights %>% 
   filter(carrier == "AS" | carrier == "F9") %>% 
-  left_join(weather, by=c("year", "month", "day", "hour", "origin")) %>% 
+  left_join(weather, by = c("year", "month", "day", "hour", "origin")) %>% 
   filter(dep_delay < 250) %>% 
   mutate(summer = ifelse(month == 6 | month == 7 | month == 8, "Summer Flights", "Non-Summer Flights"))
 
-ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier)) + 
+ggplot(data = flights_subset, mapping = aes(x = temp, y = dep_delay, col = carrier)) + 
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   facet_wrap(~summer)
 ```
-
----
 
 ---
 
@@ -1679,7 +1721,7 @@ By July 1st, 2017
 
 ## The Longer Term
 
-### DataCamp
+## DataCamp
 
 - Continue to build supplementary materials for other disciplines
   - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
@@ -1689,7 +1731,7 @@ By July 1st, 2017
 
 ## The Longer Term 
 
-### Implement Cognitive Science Research
+## Implement Cognitive Science Research
 
 - Work on interleaving and spaced practice inside the textbook to improve student learning and retention
 - Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
@@ -1703,7 +1745,7 @@ By July 1st, 2017
 - To help students visualize and understand inferential processes
   - [Sampling app](https://ismay.shinyapps.io/okcupidheights/)
   - [Probability Distribution Viewer and Calculator](http://ismay.shinyapps.io/ProbApp)
-- (MAYBE) Learn D3.js and create applets like those at [Seeing Theory](http://students.brown.edu/seeing-theory/)
+- (MAYBE) Learn D3.js and create applets like those at <br> [Seeing Theory](http://students.brown.edu/seeing-theory/)
 
 ---
 
@@ -1811,3 +1853,14 @@ class: inverse, center, middle
 
 # DEMO of `bookdown` <br> with ModernDive Light
 
+---
+
+class: middle
+
+# Thanks for attending!
+
+- [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
+    - Feel free to modify the book as you wish for your own needs! Just please list the authors as "Chester Ismay, Albert Y. Kim, and YOU!"
+- These slides available at <http://bit.ly/uscots2017-slides>
+- Slides created via the R package [xaringan](https://github.com/yihui/xaringan) by Yihui Xie
+- Source code for these slides at <https://github.com/ismayc/moderndive-workshops>
