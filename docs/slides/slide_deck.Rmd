@@ -273,6 +273,7 @@ class: center, middle, inverse
 * Download this ZIP file & extract the contents to a folder on your computer [`master.zip`](https://github.com/ismayc/moderndiver-lite/archive/master.zip)
 * Double click `moderndiver-lite.Rproj` to open in RStudio
 * Build -> Build Book
+    - `install.packages('knitr', repos = c('http://rforge.net', 'http://cran.rstudio.org'), type = 'source')`
 
 ---
 
