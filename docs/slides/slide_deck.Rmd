@@ -3,23 +3,23 @@ title: A Fully Customizable Textbook for Introductory Statistics/Data Science
 subtitle: USCOTS 2017 Workshop
 author: Chester Ismay and Albert Y. Kim
 date: May 17 & 18, 2017 <br><br> Slides at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document at <http://bit.ly/uscots17-html>
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 1
-    theme: cosmo
-    highlight: tango
-    df_print: paged
 # output:
-#   xaringan::moon_reader:
-#     lib_dir: libs
-#     nature:
-#       highlightStyle: github
-#       highlightLines: true
-#       highlightLanguage: r
-#     countIncrementalSlides: false
-#     css: example.css
+#   html_document:
+#     toc: true
+#     toc_float: true
+#     toc_depth: 1
+#     theme: cosmo
+#     highlight: tango
+#     df_print: paged
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      highlightLanguage: r
+    countIncrementalSlides: false
+    css: example.css
 ---
 
 <!-- Write slide link on whiteboard -->
@@ -74,7 +74,7 @@ class: center, middle
 
 ## ModernDive and Our Syllabi
 
-* ModernDive's guiding philosophies are deeply intertwined our syllabi
+* ModernDive's guiding philosophies are deeply <br> intertwined our syllabi
 
 --
 
@@ -86,7 +86,7 @@ class: center, middle
 
 ---
 
-## Albert's Course (Introduction to Statistical & Data Sciences)
+## Albert's Course (Intro to Statistical & Data Sciences)
 
 * [Webpage](https://rudeboybert.github.io/MATH116/) and [GitHub Repo](https://github.com/rudeboybert/MATH116)
 * Administrative:
@@ -96,7 +96,7 @@ class: center, middle
 
 ---
     
-## Albert's Course (Introduction to Statistical & Data Sciences)
+## Albert's Course (Intro to Statistical & Data Sciences)
 
 * Students:
     + ~24 students/section of all years/backgrounds. Only stats class many will take
@@ -547,42 +547,38 @@ gapminder %>% filter(year == 1992) %>%
 
 ---
 
+class: center, middle
 
 ## Grammar of Graphics
 
-.left-column[
 Wilkinson (2005) laid out the proposed "Grammar of Graphics"
-]
 
-.right-column[
 <a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 300px;"></a>
-]
 
 ---
 
 ## Grammar of Graphics in R
 
-.left-column[
 Wickham implemented the grammar in R in the `ggplot2` package
-]
 
-.right-column[
 <a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 300px;"></a>
-]
 
 ---
 
 class: center, middle
 
-# What is a statistical graphic?
+## What is a statistical graphic?
+
 --
 
 ## A `mapping` of <br> `data` variables
+
 --
 
 ## to <br> `aes()`thetic attributes
 
 --
+
 ## of <br> `geom_`etric objects.
 
 ---
@@ -603,7 +599,7 @@ simple_ex <-
     C = c(3, 2, 1, 2),
     D = c("low", "low", "high", "high")
   )
-simple_ex %>% knitr::kable(format="html")
+simple_ex
 ```
 
 <!-- Copy to chalkboard/whiteboard -->
@@ -735,8 +731,7 @@ dem_score_tidy <- dem_score %>%
   gather(-country, key = "year", value = "dem_score") %>% 
   mutate(year = as.numeric(year)) 
 set.seed(2)
-dem_score_tidy %>% sample_n(13) %>% arrange(country) %>% 
-  knitr::kable(format = "html")
+dem_score_tidy %>% sample_n(13) %>% arrange(country)
 ```
 
 ---
@@ -1130,6 +1125,7 @@ ggplot(data = max_exp_1997_by_cont,
        mapping = aes(x = continent, y = max_exp)) +
   geom_col()
 ```
+
 ---
 
 
@@ -1138,11 +1134,13 @@ ggplot(data = max_exp_1997_by_cont,
 - `filter()`
 - `summarize()`
 - `group_by()`
+
 --
 
 - `mutate()`
 
 --
+
 - `arrange()`
 
 ---
@@ -1251,11 +1249,13 @@ gapminder %>% arrange(year)
 ## Changing of observation unit
 
 True or False
+
 > Each of `filter`, `mutate`, and `arrange` change the observational unit.
 
 --
 
 True or False
+
 > `group_by() %>% summarize()` changes the observational unit.
 
 <!-- 
@@ -1473,7 +1473,7 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
-## Chapter 9: Regression Highlights
+# Chapter 9: Regression Highlights
 
 1. Experience with `ggplot2` package and knowledge of the Grammar of Graphics primes students for regression
 1. Use of the `broom` package to unpack regression
@@ -1531,8 +1531,7 @@ Why? Dig deeper into data. Look at `origin` and `dest` variables as well:
 ```{r, echo=FALSE, fig.width=10.5, fig.height=5}
 flights_subset %>% 
   group_by(carrier, origin, dest) %>% 
-  summarise(`Number of Flights` = n()) %>% 
-  kable(digits=3, format = "html")
+  summarise(`Number of Flights` = n())
 ```
 
 ---
@@ -1810,5 +1809,5 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 class: inverse, center, middle
 
-# DEMO of `bookdown` with ModernDive Light
+# DEMO of `bookdown` <br> with ModernDive Light
 

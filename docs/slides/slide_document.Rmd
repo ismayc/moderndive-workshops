@@ -1249,11 +1249,13 @@ gapminder %>% arrange(year)
 ## Changing of observation unit
 
 True or False
+
 > Each of `filter`, `mutate`, and `arrange` change the observational unit.
 
 --
 
 True or False
+
 > `group_by() %>% summarize()` changes the observational unit.
 
 <!-- 
@@ -1471,7 +1473,7 @@ ggplot(simulation, aes(x=n_correct)) +
 
 ---
 
-## Chapter 9: Regression Highlights
+# Chapter 9: Regression Highlights
 
 1. Experience with `ggplot2` package and knowledge of the Grammar of Graphics primes students for regression
 1. Use of the `broom` package to unpack regression
@@ -1807,5 +1809,5 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 class: inverse, center, middle
 
-# DEMO of `bookdown` with ModernDive Light
+# DEMO of `bookdown` <br> with ModernDive Light
 
