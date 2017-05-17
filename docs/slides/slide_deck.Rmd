@@ -76,7 +76,7 @@ class: center, middle
 
 ## Albert's Course (Intro to Statistical & Data Sciences)
 
-Available in the supplementary HTML document [here].
+Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#introduction).
 
 * [Webpage](https://rudeboybert.github.io/MATH116/) and [GitHub Repo](https://github.com/rudeboybert/MATH116)
 * Administrative:
@@ -104,7 +104,7 @@ Available in the supplementary HTML document [here].
 
 ## Chester's Course (Social Statistics)
 
-Available in the supplementary HTML document [here].
+Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#introduction)
 
 * [Webpage at <http://bit.ly/soc-301>](https://ismayc.github.io/soc301_s2017/)  and [GitHub Repo](https://github.com/ismayc/soc301_s2017)
 * Administrative:
@@ -318,7 +318,7 @@ Outsource many essential but not fun to teach topics like
 
 ## DataCamp Conclusion
 
-* Not a good tool for "quick retention", but for R concept introduction and subsequent repetition.
+* Not a good tool for "quick retention," but for R concept introduction and subsequent repetition.
   + Students need to practice "speaking the language" just like with a foreign language.
 * [Feedback](https://docs.google.com/spreadsheets/d/1qUwt-v-xAQJ-1OTzMI2Q27McXG_3yXO5Qe9p-jz6BA8/edit) from students was positive.
 * Battle is more psychological than anything. DataCamp reinforces to students that
@@ -494,7 +494,9 @@ class: center, middle
 
 ## Grammar of Graphics
 
-Wilkinson (2005) laid out the proposed "Grammar of Graphics"
+Wilkinson (2005) laid out the proposed <br> "Grammar of Graphics"
+
+<br>
 
 <a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 200px;"></a>
 
@@ -504,7 +506,9 @@ class: center, middle
 
 ## Grammar of Graphics in R
 
-Wickham implemented the grammar in R in the `ggplot2` package
+Wickham implemented the grammar in R <br> in the `ggplot2` package
+
+<br>
 
 <a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 200px;"></a>
 
@@ -581,7 +585,7 @@ ggplot(data = simple_ex, aes(x = A, y = B)) +
 
 ## Reproducing the plots in <small>`ggplot2`</small>
 
-### 2. A scatter plot where the `color` of the points corresponds to `group`
+### 2. A scatter plot where the `color` of the points corresponds to `D`
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1155,10 +1159,11 @@ gapminder %>%
 - Can also put into descending order
 --
 
-```{r desc, results="hide"}
+```{r desc}
 gapminder %>%
   filter(year > 2000) %>%
-  arrange(desc(lifeExp))
+  arrange(desc(lifeExp)) %>%
+  head(10)
 ```
 
 ---
@@ -1209,7 +1214,9 @@ Draw diagram for average monthly temp aggregated like on rstudio::conf slides
 
 ---
 
-## What is meant by "joining data frames" and why is it useful?
+class: center
+
+## What is meant by "joining data frames" and <br> why is it useful?
 
 --
 
@@ -1226,7 +1233,7 @@ library(fivethirtyeight)
 library(readr)
 ideology <- read_csv("https://ismayc.github.io/Effective-Data-Storytelling-using-the-tidyverse/datasets/ideology.csv")
 police_join <- inner_join(x = police_locals, y = ideology, by = "city")
-police_join
+rmarkdown::paged_table(police_join)
 ```
 
 ---
@@ -1234,7 +1241,7 @@ police_join
 ```{r}
 cost_of_living <- read_csv("https://ismayc.github.io/Effective-Data-Storytelling-using-the-tidyverse/datasets/cost_of_living.csv")
 police_join_cost <- inner_join(x = police_join, y = cost_of_living, by = "state")
-police_join_cost
+rmarkdown::paged_table(police_join_cost)
 ```
 
 ---
@@ -1256,14 +1263,14 @@ ggplot(data = police_join_cost,
 Use the 5MV to answer problems from R data packages, e.g., [`nycflights13` $\rightarrow$ `weather`] 
 
 <!--
-Try to look through the help documentation/Google to improve your plots
+Lay out what the resulting table should look like on paper first.
 -->
 
-1. What is the maximum arrival delay for each carrier departing JFK? <br> [`nycflights13` $\rightarrow$ `flights`]
+1. What is the maximum arrival delay for each carrier departing JFK? [`nycflights13` $\rightarrow$ `flights`]
 
-2. Calculate the domestic return on investment for 2013 scaled data and sort from highest at the top to lowest at the bottom <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
+2. Calculate the domestic return on investment for 2013 scaled data descending by ROI <br> [`fivethirtyeight` $\rightarrow$ `bechdel`]
 
-3. Include the name of the `carrier` as a column in the `flights` data frame [`nycflights13` $\rightarrow$ `flights`, `airlines`]
+3. Include the name of the `carrier` as a column in the `flights` data frame <br> [`nycflights13` $\rightarrow$ `flights`, `airlines`]
 
 ---
 
@@ -1348,7 +1355,7 @@ It has functions for random simulations:
 
 ## Lady Tasting Tea
 
-The example will be built around this code:  (Available in the supplementary HTML document [here].)
+The example will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_6:_sampling_highlights).)
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1400,7 +1407,7 @@ ggplot(simulation, aes(x=n_correct)) +
 1. Observations fit expected distibution vs not
 1. Test statistic: $\sum_{i=1}^{k}\frac{\left(\mbox{Obs}_i-\mbox{Exp}_i\right)^2}{\mbox{Exp}_i}$
 1. Observed test statistic: Compute using data!
-1. Null Distribution: (mathematically derived) [Chi-Squared Dist'n](https://beta.rstudioconnect.com/connect/#/apps/2719/access).
+1. Null Distribution: (mathematically derived) <br> [Chi-Squared Dist'n](https://beta.rstudioconnect.com/connect/#/apps/2719/access).
 1. Area to the right!
 
 ---
@@ -1408,6 +1415,8 @@ ggplot(simulation, aes(x=n_correct)) +
 ## There is Only One Test
 
 <center><img src="figure/ht.png" alt="Drawing" style="width: 700px;"/></center>
+
+- Created by [Allen Downey](http://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
 
 ---
 
@@ -1421,12 +1430,14 @@ ggplot(simulation, aes(x=n_correct)) +
   
 ## Sampling Distribution, SE, & C.I. Example
   
-The example will be built around this code:  (Available in the supplementary HTML document [here].)
+The example will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_8:_confidence_intervals_highlights.))
 
 1. Discuss with your seatmates what all 5 code parts below are doing.
 1. Try increasing `n` and repeating. What does this correspond to doing in real life?
 1. How does the histogram change?
 1. Describe using statistical language the role `n` plays when it comes to estimating $\mu$.
+
+<br><br>
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1565,7 +1576,7 @@ In our case, `broom` functions take `lm` objects as inputs and return the follow
 
 ## 2. `broom` Package
 
-The chapter will be built around this code:  (Available in the supplementary HTML document [here].)
+The chapter will be built around this code:  (Available in the supplementary HTML document [here](https://ismayc.github.io/moderndive-workshops/slides/slide_document.html#chapter_9:_regression_highlights)).
 
 ```{r, eval=FALSE}
 library(ggplot2)
@@ -1644,17 +1655,15 @@ ggplot(data = regression_points, mapping = aes(sample = .resid)) +
 # Preview of Multiple Regression-----------------------------------------------
 flights_subset <- flights %>% 
   filter(carrier == "AS" | carrier == "F9") %>% 
-  left_join(weather, by=c("year", "month", "day", "hour", "origin")) %>% 
+  left_join(weather, by = c("year", "month", "day", "hour", "origin")) %>% 
   filter(dep_delay < 250) %>% 
   mutate(summer = ifelse(month == 6 | month == 7 | month == 8, "Summer Flights", "Non-Summer Flights"))
 
-ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier)) + 
+ggplot(data = flights_subset, mapping = aes(x = temp, y = dep_delay, col = carrier)) + 
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   facet_wrap(~summer)
 ```
-
----
 
 ---
 
@@ -1686,7 +1695,7 @@ By July 1st, 2017
 
 ## The Longer Term
 
-### DataCamp
+## DataCamp
 
 - Continue to build supplementary materials for other disciplines
   - [Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse) designed for Social Scientists/Data Journalists
@@ -1696,7 +1705,7 @@ By July 1st, 2017
 
 ## The Longer Term 
 
-### Implement Cognitive Science Research
+## Implement Cognitive Science Research
 
 - Work on interleaving and spaced practice inside the textbook to improve student learning and retention
 - Follow the [principles and research](http://www.learningscientists.org/posters) laid out by the [Learning Scientists](http://www.learningscientists.org/)
@@ -1710,7 +1719,7 @@ By July 1st, 2017
 - To help students visualize and understand inferential processes
   - [Sampling app](https://ismay.shinyapps.io/okcupidheights/)
   - [Probability Distribution Viewer and Calculator](http://ismay.shinyapps.io/ProbApp)
-- (MAYBE) Learn D3.js and create applets like those at [Seeing Theory](http://students.brown.edu/seeing-theory/)
+- (MAYBE) Learn D3.js and create applets like those at <br> [Seeing Theory](http://students.brown.edu/seeing-theory/)
 
 ---
 
@@ -1818,3 +1827,14 @@ class: inverse, center, middle
 
 # DEMO of `bookdown` <br> with ModernDive Light
 
+---
+
+class: middle
+
+# Thanks for attending!
+
+- [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
+    - Feel free to modify the book as you wish for your own needs! Just please list the authors as "Chester Ismay, Albert Y. Kim, and YOU!"
+- These slides available at <http://bit.ly/uscots2017-slides>
+- Slides created via the R package [xaringan](https://github.com/yihui/xaringan) by Yihui Xie
+- Source code for these slides at <https://github.com/ismayc/moderndive-workshops>
