@@ -7,6 +7,8 @@ Download this ZIP file & extract the contents to a folder on your computer - [Mo
 
 Our open-source textbook - [ModernDive.com](http://moderndive.com)
 
+Our free DataCamp course - [Effective Datastorytelling via the tidyverse](http://bit.ly/datacamp-538)
+
 - [Chester's Social Statistics Course](https://ismayc.github.io/soc301_s2017/)
     * [Webpage at <http://bit.ly/soc-301>](https://ismayc.github.io/soc301_s2017/)  and [GitHub Repo](https://github.com/ismayc/soc301_s2017)
     * Administrative:

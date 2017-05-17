@@ -1148,21 +1148,22 @@ levels of a different categorical variable
 max_exp_1997_by_cont &lt;- gapminder %&gt;% 
   filter(year == 1997) %&gt;% 
   group_by(continent) %&gt;%
-  summarize(max_exp = max(lifeExp))
+  summarize(max_exp = max(lifeExp),
+            sd_exp = sd(lifeExp))
 max_exp_1997_by_cont
 ```
 
 --
 
 ```
-# A tibble: 5 × 2
-  continent max_exp
-     &lt;fctr&gt;   &lt;dbl&gt;
-1    Africa  74.772
-2  Americas  78.610
-3      Asia  80.690
-4    Europe  79.390
-5   Oceania  78.830
+# A tibble: 5 × 3
+  continent max_exp    sd_exp
+     &lt;fctr&gt;   &lt;dbl&gt;     &lt;dbl&gt;
+1    Africa  74.772 9.1033866
+2  Americas  78.610 4.8875839
+3      Asia  80.690 8.0911706
+4    Europe  79.390 3.1046766
+5   Oceania  78.830 0.9050967
 ```
 
 ---
@@ -1175,7 +1176,9 @@ For aggregated data, use `geom_col`
 ```r
 ggplot(data = max_exp_1997_by_cont, 
        mapping = aes(x = continent, y = max_exp)) +
-  geom_col()
+  geom_col() +
+  geom_errorbar(mapping = aes(ymin = max_exp - sd_exp,
+                              ymax = max_exp + sd_exp))
 ```
 
 ![](slide_deck_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
