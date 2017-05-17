@@ -2,7 +2,7 @@
 title: A Fully Customizable Textbook for Introductory Statistics/Data Science
 subtitle: USCOTS 2017 Workshop
 author: Chester Ismay and Albert Y. Kim
-date: May 17 & 18, 2017 <br><br> Slides available at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document available at <http://bit.ly/uscots17-html>
+date: May 17 & 18, 2017 <br><br> Slides at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document at <http://bit.ly/uscots17-html>
 output:
   html_document:
     toc: true
@@ -11,8 +11,7 @@ output:
     theme: cosmo
     highlight: tango
     df_print: paged
-    css: example2.css    
-# output: 
+# output:
 #   xaringan::moon_reader:
 #     lib_dir: libs
 #     nature:
@@ -20,7 +19,7 @@ output:
 #       highlightLines: true
 #       highlightLanguage: r
 #     countIncrementalSlides: false
-#     css: example.css    
+#     css: example.css
 ---
 
 <!-- Write slide link on whiteboard -->
@@ -548,42 +547,38 @@ gapminder %>% filter(year == 1992) %>%
 
 ---
 
+class: center, middle
 
 ## Grammar of Graphics
 
-.left-column[
 Wilkinson (2005) laid out the proposed "Grammar of Graphics"
-]
 
-.right-column[
 <a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 300px;"></a>
-]
 
 ---
 
 ## Grammar of Graphics in R
 
-.left-column[
 Wickham implemented the grammar in R in the `ggplot2` package
-]
 
-.right-column[
 <a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 300px;"></a>
-]
 
 ---
 
 class: center, middle
 
-# What is a statistical graphic?
+## What is a statistical graphic?
+
 --
 
 ## A `mapping` of <br> `data` variables
+
 --
 
 ## to <br> `aes()`thetic attributes
 
 --
+
 ## of <br> `geom_`etric objects.
 
 ---
@@ -604,7 +599,7 @@ simple_ex <-
     C = c(3, 2, 1, 2),
     D = c("low", "low", "high", "high")
   )
-simple_ex %>% knitr::kable(format="html")
+simple_ex
 ```
 
 <!-- Copy to chalkboard/whiteboard -->
@@ -736,8 +731,7 @@ dem_score_tidy <- dem_score %>%
   gather(-country, key = "year", value = "dem_score") %>% 
   mutate(year = as.numeric(year)) 
 set.seed(2)
-dem_score_tidy %>% sample_n(13) %>% arrange(country) %>% 
-  knitr::kable(format = "html")
+dem_score_tidy %>% sample_n(13) %>% arrange(country)
 ```
 
 ---
@@ -996,7 +990,7 @@ gapminder %>% filter(continent == "Asia") %>%
 
 ---
 
-# The Five Main Verbs of data wrangling
+# The Five Main Verbs (5MV) of data wrangling
 
 ### `filter()` <br> `summarize()` <br> `group_by()` <br> `mutate()` <br> `arrange()`
 
@@ -1131,6 +1125,7 @@ ggplot(data = max_exp_1997_by_cont,
        mapping = aes(x = continent, y = max_exp)) +
   geom_col()
 ```
+
 ---
 
 
@@ -1139,11 +1134,13 @@ ggplot(data = max_exp_1997_by_cont,
 - `filter()`
 - `summarize()`
 - `group_by()`
+
 --
 
 - `mutate()`
 
 --
+
 - `arrange()`
 
 ---
@@ -1468,7 +1465,7 @@ ggplot(simulation, aes(x=n_correct)) +
 ---
 
 
-## Chapter 8: Confidence Intervals Highlights
+# Chapter 8: Confidence Intervals Highlights
 
 
 
@@ -1532,8 +1529,7 @@ Why? Dig deeper into data. Look at `origin` and `dest` variables as well:
 ```{r, echo=FALSE, fig.width=10.5, fig.height=5}
 flights_subset %>% 
   group_by(carrier, origin, dest) %>% 
-  summarise(`Number of Flights` = n()) %>% 
-  kable(digits=3, format = "html")
+  summarise(`Number of Flights` = n())
 ```
 
 ---
@@ -1655,7 +1651,7 @@ ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier))
 
 class: inverse, center, middle
 
-# The Future
+# The Future of ModernDive
 
 ---
 

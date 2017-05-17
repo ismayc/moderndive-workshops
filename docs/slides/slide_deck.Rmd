@@ -3,24 +3,23 @@ title: A Fully Customizable Textbook for Introductory Statistics/Data Science
 subtitle: USCOTS 2017 Workshop
 author: Chester Ismay and Albert Y. Kim
 date: May 17 & 18, 2017 <br><br> Slides at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document at <http://bit.ly/uscots17-html>
-# output:
-#   html_document:
-#     toc: true
-#     toc_float: true
-#     toc_depth: 1
-#     theme: cosmo
-#     highlight: tango
-#     df_print: paged
-#     css: example2.css    
 output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      highlightLanguage: r
-    countIncrementalSlides: false
-    css: example.css
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 1
+    theme: cosmo
+    highlight: tango
+    df_print: paged
+# output:
+#   xaringan::moon_reader:
+#     lib_dir: libs
+#     nature:
+#       highlightStyle: github
+#       highlightLines: true
+#       highlightLanguage: r
+#     countIncrementalSlides: false
+#     css: example.css
 ---
 
 <!-- Write slide link on whiteboard -->
@@ -996,7 +995,7 @@ gapminder %>% filter(continent == "Asia") %>%
 
 ---
 
-# The Five Main Verbs of data wrangling
+# The Five Main Verbs (5MV) of data wrangling
 
 ### `filter()` <br> `summarize()` <br> `group_by()` <br> `mutate()` <br> `arrange()`
 
@@ -1468,7 +1467,7 @@ ggplot(simulation, aes(x=n_correct)) +
 ---
 
 
-## Chapter 8: Confidence Intervals Highlights
+# Chapter 8: Confidence Intervals Highlights
 
 
 
@@ -1655,7 +1654,7 @@ ggplot(data = flights_subset, mapping = aes(x = temp, y=dep_delay, col=carrier))
 
 class: inverse, center, middle
 
-# The Future
+# The Future of ModernDive
 
 ---
 
