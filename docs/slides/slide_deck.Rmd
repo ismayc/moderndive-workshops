@@ -70,43 +70,23 @@ class: center, middle
 * Webpage: <http://moderndive.com>. [GitHub Repo](https://github.com/ismayc/moderndiver-book)
 * In you haven't already, please [signup](http://moderndive.us15.list-manage2.com/subscribe?u=87888fab720da90906427a5be&id=0c9e2d1df2) for our mailing list!
 
----
 
-## ModernDive and Our Syllabi
-
-* ModernDive's guiding philosophies are deeply <br> intertwined our syllabi
-
---
-
-* Hard to speak of ModernDive in isolation from syllabi and vice-versa
-
---
-
-* Numbers are numbers, but data has context...
 
 ---
 
 ## Albert's Course (Intro to Statistical & Data Sciences)
+
+Available in the supplementary HTML document [here].
 
 * [Webpage](https://rudeboybert.github.io/MATH116/) and [GitHub Repo](https://github.com/rudeboybert/MATH116)
 * Administrative:
     + Chief non-econ/bio stats service class at Middlebury
     + 12 weeks each with 3h "lecture" + 1h "lab"
     + <u>No prerequisites</u>
-
----
-    
-## Albert's Course (Intro to Statistical & Data Sciences)
-
 * Students:
     + ~24 students/section of all years/backgrounds. Only stats class many will take
     + Background: Many had AP stats, some with programming
     + All had laptops that they brought everyday
-    
----
-
-## Albert's Syllabus
-
 * [Topic List](https://rudeboybert.github.io/MATH116/)
     + <u>First half is data science</u>: data visualization, manipulation, importing
     + <u>Second half is intro stats</u>: sampling, hypothesis tests, CI, regression
@@ -115,19 +95,16 @@ class: center, middle
     + 10%: engagement
     + 45%: 3 midterms (last during finals week)
     + <u>35%: [Final projects](https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#learning_goals)</u>
+* Typical Classtime:
+    + First 10-15min: Priming topic, either via slides or <u>chalk talk</u>
+    + Remainder: Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
 
----
-
-## Albert's Typical Classtime
-
-* First 10-15min: Priming topic, either via slides or <u>chalk talk</u>
-* Remainder: Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
-
-<center><img src="figure/group_1.jpg" width="400px"/></center>
 
 ---
 
 ## Chester's Course (Social Statistics)
+
+Available in the supplementary HTML document [here].
 
 * [Webpage at <http://bit.ly/soc-301>](https://ismayc.github.io/soc301_s2017/)  and [GitHub Repo](https://github.com/ismayc/soc301_s2017)
 * Administrative:
@@ -135,20 +112,10 @@ class: center, middle
     + An option take to fulfill the Pacific U. math requirement
     + 14 weeks, meeting on Tues & Thurs for 95 minutes
     + <u>No prerequisites</u>
-    
----
-
-## Chester's Course (Social Statistics)
-    
 * Students:
     + 26 students of all years/backgrounds. Only stats class many will take
     + Background: 3 had AP stats, zero with programming
     + All had laptops that they brought everyday
-
----
-
-## Chester's Syllabus
-
 * [Course Schedule](https://ismayc.github.io/soc301_s2017/schedule/)
     + <u>First half is data science</u>: data visualization, wrangling, importing
     + <u>Second half is intro stats</u>: sampling, testing, CI
@@ -159,17 +126,13 @@ class: center, middle
     + 20%: Pencil-and-paper Midterm Exam
     + 25%: (5) Multiple choice cumulative quizzes
     + 25%: Cumulative Pencil-and-paper Final Exam
-
----
-
-## Chester's Typical Classtime
-
-* First 5-10min: Students answer warmup exercise based on previous content
-* Next 10-20min: Review reading assignment via [slides](http://ismayc.github.io/soc301_s2017/slides/slide_deck.html)
-* Bulk of class: 
-    - Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
-    - Students work on next DataCamp problems and ask questions as needed
-* Last 5-10min:  Go over warmup exercise again or quiz students on material from that period   
+* Typical Classtime:
+    + First 5-10min: Students answer warmup exercise based on previous content
+    + Next 10-20min: Review reading assignment via [slides](http://ismayc.github.io/soc301_s2017/slides/slide_deck.html)
+    + Bulk of class: 
+        - Students read over text & do <u>Learning Checks</u> in groups and without direct instructor guidance. 
+        - Students work on next DataCamp problems and ask questions as needed
+    + Last 5-10min:  Go over warmup exercise again or quiz students on material from that period   
 
 ---
 
@@ -181,13 +144,6 @@ class: center, middle
 1. Complete reproducibility
 
 
-<!--
-## 1) Data First!
-
-Actual dialogue I had with a student:
-
-![](figure/dialogue_1.png)
--->
 
 ---
 
@@ -198,13 +154,6 @@ Cobb ([TAS 2015](https://arxiv.org/abs/1507.05346)): *Minimizing prerequisites t
 ![](figure/pipeline.png)
 
 
----
-
-## 1) Data First!
-
-... and not just this part. 
-
-![](figure/pipeline2.png)
 
 ---
 
@@ -292,22 +241,16 @@ Why should we do this?
 
 * Data science and machine learning.
 * Where statistics is heading. Gelman [blog post](http://andrewgelman.com/2017/05/14/computer-programming-prerequisite-learning-statistics/).
-* Many new tools, like DataCamp, allow us to outsource needed practice with instant feedback.
-* We are doing a disservice to students by shielding them from these computational ideas.
+* If we don't, we are doing a disservice to students by shielding them from these computational ideas.
+* Bigger picture: Coding is becoming a basic skill like reading and writing.
 
----
 
-## 3) Algorithms, Computation, & Coding
-
-* Bigger picture:
-    + Coding is becoming a basic skill like reading and writing.
-    + Data analysis, as opposed to algorithms and data structures, could attract more students from traditionally underrepresented groups.
 
 ---
 
 ## 4) Complete Reproducibility
 
-* Students learn best when they can take can apart a toy (analysis) and then rebuild it (synthesis).
+* Students learn best when they can take apart a toy (analysis) and then rebuild it (synthesis).
 * Crisis in Reproducibility
 * Ultimately the best textbook is one you've written yourself.
     + Everyone has different contexts, backgrounds, needs
@@ -553,15 +496,17 @@ class: center, middle
 
 Wilkinson (2005) laid out the proposed "Grammar of Graphics"
 
-<a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 300px;"></a>
+<a href="http://www.powells.com/book/the-grammar-of-graphics-9780387245447"><img src="figure/graphics.jpg" style="width: 200px;"></a>
 
 ---
+
+class: center, middle
 
 ## Grammar of Graphics in R
 
 Wickham implemented the grammar in R in the `ggplot2` package
 
-<a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 300px;"></a>
+<a href="http://www.powells.com/book/ggplot2-elegant-graphics-for-data-analysis-9783319242750/68-428"><img src="figure/ggplot2.jpg" style="width: 200px;"></a>
 
 ---
 
@@ -1348,7 +1293,7 @@ We now enter the "traditional" topics of intro stats...
 
 ## Statistical Inference
 
-... but now armed with
+... but now students are armed with
 
 1. Data visualization
 1. Data wrangling skills
@@ -1358,13 +1303,13 @@ We now enter the "traditional" topics of intro stats...
 
 # Chapter 6: Sampling Highlights
 
-Sampling is at the root of statistics. Two approaches to understanding:
+Sampling is at the root of statistics. Two approaches:
 
 <br>
 
 Either we use this...            |  Or we use this...
 :-------------------------:|:-------------------------:
-<img src="figure/formulas.png" alt="Drawing" style="width: 250px;"/>   |  <img src="figure/coding.jpg" alt="Drawing" style="width: 250px;"/> 
+<img src="figure/formulas.png" alt="Drawing" style="width: 300px;"/>   |  <img src="figure/coding.jpg" alt="Drawing" style="width: 300px;"/> 
 
 <br>
 
@@ -1385,7 +1330,7 @@ It has functions for random simulations:
 
 ## Lady Tasting Tea
 
-<center><img src="figure/lady_tasting_tea.jpg" alt="Drawing" style="height: 500px;"/></center>
+<center><img src="figure/lady_tasting_tea.jpg" alt="Drawing" style="height: 450px;"/></center>
 
 
 ---
@@ -1435,22 +1380,22 @@ ggplot(simulation, aes(x=n_correct)) +
 1. Compute the observed test statistic $\delta^*$
 1. Construct the null distribution either
     * Mathematically
-    * Via Simulation
-1. Compare $\delta^*$ to null distribution to compute $p$-value
+    * **Via Simulation**
+1. Compare $\delta^*$ to null distribution to compute p-value
 
 ---
 
-## Back to Lady Tasting Tea
+## There is Only One Test: Lady Tasting Tea
 
 1. She is guessing at random vs she can tell which came first
 1. Test statistic: Number out of 8 shes guesses right
 1. Observed test statistic: 8 of 8. The red line!
 1. Null distribution: (simulated) bar graph!
-1. $p$-value: Very small! Above 0.36%
+1. p-value: Very small! Above 0.36%
 
 ---
 
-## Chi-Squared Goodness-of-Fit
+## There is Only One Test: Goodness-of-Fit
 
 1. Observations fit expected distibution vs not
 1. Test statistic: $\sum_{i=1}^{k}\frac{\left(\mbox{Obs}_i-\mbox{Exp}_i\right)^2}{\mbox{Exp}_i}$
@@ -1469,7 +1414,69 @@ ggplot(simulation, aes(x=n_correct)) +
 
 # Chapter 8: Confidence Intervals Highlights
 
+* Not only show students repeated sampling (with a Shiny app for example), let them repeatedly sample!
+* In other words, let them construct sampling distributions.
 
+---
+  
+## Sampling Distribution, SE, & C.I. Example
+  
+The example will be built around this code:  (Available in the supplementary HTML document [here].)
+
+1. Discuss with your seatmates what all 5 code parts below are doing.
+1. Try increasing `n` and repeating. What does this correspond to doing in real life?
+1. How does the histogram change?
+1. Describe using statistical language the role `n` plays when it comes to estimating $\mu$.
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+library(mosaic)
+library(okcupiddata)
+data(profiles)
+
+# For simplicity, remove 3 individuals who did not list their height
+profiles <- profiles %>% 
+  filter(!is.na(height))
+
+# Population mean
+mu <- mean(profiles$height)
+
+# Sample size:
+n <- 5
+
+# Parts 1 & 2:
+resample(profiles$height, size=n, replace=TRUE)
+mean(resample(profiles$height, size=n, replace=TRUE))
+
+# Part 3:
+samples <- do(10000) * mean(resample(profiles$height, size=n, replace=TRUE))
+View(samples)
+
+# Part 4:
+ggplot(samples, aes(x=mean)) +
+  geom_histogram(binwidth = 1) +
+  labs(x="sample mean") + 
+  xlim(c(50,80)) +
+  geom_vline(xintercept=mu, col="red")
+
+# Part 5:
+sd(samples$mean)
+```
+
+
+---
+  
+## The Hard Part
+
+Convincing students:
+
+* We only do the blue via simulation *as a theoretical exercise*
+* We do the purple in *real life*
+
+<br>
+
+<center><img src="figure/SE.png" alt="Drawing" style="width: 800px;"/></center>
 
 ---
 
