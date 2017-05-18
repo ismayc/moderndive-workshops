@@ -1087,7 +1087,8 @@ ggplot(data = max_exp_1997_by_cont,
        mapping = aes(x = continent, y = max_exp)) +
   geom_col() +
   geom_errorbar(mapping = aes(ymin = max_exp - sd_exp,
-                              ymax = max_exp + sd_exp))
+                              ymax = max_exp + sd_exp), 
+                color = "blue", width = 0.2)
 ```
 
 ---
@@ -1712,6 +1713,9 @@ class: inverse, center, middle
 
 # The Future of ModernDive
 
+
+<u>Recall</u>: Slides at <http://bit.ly/uscots17-slides> <br> Supplementary HTML document at <br> <http://bit.ly/uscots17-html>
+
 ---
 
 ## The Immediate Future
@@ -1864,6 +1868,18 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 ---
 
+## The Basics of `bookdown`
+
+- `index.Rmd` file is the "driver"
+- `Rmd` files numbered in the order you want them to appear in the book
+- `_bookdown.yml` gives output specifications
+  - **VITALLY IMPORTANT** Set `output_dir: "docs"` to work with GitHub Pages
+- `_output.yml` provides which types of output (webpage, PDF, Word Document, epub) to produce (with arguments)
+  - We will focus on webpage/gitbook
+
+
+---
+
 class: inverse, center, middle
 
 # DEMO of `bookdown` <br> with ModernDive Light
@@ -1874,6 +1890,9 @@ class: middle
 
 # Thanks for attending!
 
+<!--
+- [Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
+-->
 - [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
     - Feel free to modify the book as you wish for your own needs! Just please list the authors as "Chester Ismay, Albert Y. Kim, and YOU!"
 - These slides available at <http://bit.ly/uscots2017-slides>

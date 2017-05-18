@@ -417,7 +417,7 @@ class: center, middle
 ```
 # A tibble: 12 × 4
     year                        title clean_test budget_2013
-   &lt;int&gt;                        &lt;chr&gt;      &lt;chr&gt;       &lt;int&gt;
+   &lt;int&gt;                        &lt;chr&gt;     &lt;fctr&gt;       &lt;int&gt;
 1   1995                    Apollo 13         ok    99370665
 2   2005           Brokeback Mountain     notalk    16583160
 3   2010         Diary of a Wimpy Kid         ok    16023478
@@ -1178,7 +1178,8 @@ ggplot(data = max_exp_1997_by_cont,
        mapping = aes(x = continent, y = max_exp)) +
   geom_col() +
   geom_errorbar(mapping = aes(ymin = max_exp - sd_exp,
-                              ymax = max_exp + sd_exp))
+                              ymax = max_exp + sd_exp), 
+                color = "blue", width = 0.2)
 ```
 
 ![](slide_deck_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
@@ -1926,6 +1927,9 @@ class: inverse, center, middle
 
 # The Future of ModernDive
 
+
+&lt;u&gt;Recall&lt;/u&gt;: Slides at &lt;http://bit.ly/uscots17-slides&gt; &lt;br&gt; Supplementary HTML document at &lt;br&gt; &lt;http://bit.ly/uscots17-html&gt;
+
 ---
 
 ## The Immediate Future
@@ -2073,6 +2077,18 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 
 ---
 
+## The Basics of `bookdown`
+
+- `index.Rmd` file is the "driver"
+- `Rmd` files numbered in the order you want them to appear in the book
+- `_bookdown.yml` gives output specifications
+  - **VITALLY IMPORTANT** Set `output_dir: "docs"` to work with GitHub Pages
+- `_output.yml` provides which types of output (webpage, PDF, Word Document, epub) to produce (with arguments)
+  - We will focus on webpage/gitbook
+
+
+---
+
 class: inverse, center, middle
 
 # DEMO of `bookdown` &lt;br&gt; with ModernDive Light
@@ -2083,6 +2099,9 @@ class: middle
 
 # Thanks for attending!
 
+&lt;!--
+- [Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
+--&gt;
 - [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
     - Feel free to modify the book as you wish for your own needs! Just please list the authors as "Chester Ismay, Albert Y. Kim, and YOU!"
 - These slides available at &lt;http://bit.ly/uscots2017-slides&gt;
