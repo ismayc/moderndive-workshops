@@ -1873,7 +1873,7 @@ From [bookdown book about `bookdown`](https://bookdown.org/yihui/bookdown/):
 - `index.Rmd` file is the "driver"
 - `Rmd` files numbered in the order you want them to appear in the book
 - `_bookdown.yml` gives output specifications
-  - **VITALLY IMPORTANT** Set `output_dir: "docs"` to work with GitHub Pages
+  - **Set `output_dir: "docs"` to work with GitHub Pages**
 - `_output.yml` provides which types of output (webpage, PDF, Word Document, epub) to produce (with arguments)
   - We will focus on webpage/gitbook
 
@@ -1901,9 +1901,7 @@ class: middle
 
 # Thanks for attending!
 
-<!--
-Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
--->
+- [Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
 - Email us if you'd like to chat further during USCOTS or later
     - [chester@moderndive.com](mailto:chester@moderndive.com) / [albert@moderndive.com](mailto:albert@moderndive.com)
 - [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
