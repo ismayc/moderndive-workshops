@@ -1061,7 +1061,8 @@ levels of a different categorical variable
 max_exp_1997_by_cont <- gapminder %>% 
   filter(year == 1997) %>% 
   group_by(continent) %>%
-  summarize(max_exp = max(lifeExp))
+  summarize(max_exp = max(lifeExp),
+            sd_exp = sd(lifeExp))
 max_exp_1997_by_cont
 ```
 
@@ -1070,7 +1071,8 @@ max_exp_1997_by_cont
 max_exp_1997_by_cont <- gapminder %>% 
   filter(year == 1997) %>% 
   group_by(continent) %>%
-  summarize(max_exp = max(lifeExp))
+  summarize(max_exp = max(lifeExp),
+            sd_exp = sd(lifeExp))
 max_exp_1997_by_cont
 ```
 
@@ -1083,7 +1085,9 @@ For aggregated data, use `geom_col`
 ```{r fig.height=4.5}
 ggplot(data = max_exp_1997_by_cont, 
        mapping = aes(x = continent, y = max_exp)) +
-  geom_col()
+  geom_col() +
+  geom_errorbar(mapping = aes(ymin = max_exp - sd_exp,
+                              ymax = max_exp + sd_exp))
 ```
 
 ---
@@ -1865,6 +1869,17 @@ class: inverse, center, middle
 # DEMO of `bookdown` <br> with ModernDive Light
 
 ---
+
+## Uploading to GitHub Pages
+
+* Create a [GitHub Pages](https://pages.github.com/) personal page. Ex: [rudeboybert.github.io](rudeboybert.github.io)
+* Create New Repository
+* Follow instructions in 2nd paragraph of [Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/github.html)
+* Drag and drop onto GitHub repository using "Upload Files" Button
+
+
+---
+
 
 class: middle
 
