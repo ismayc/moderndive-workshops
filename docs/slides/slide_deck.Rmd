@@ -1080,12 +1080,12 @@ max_exp_1997_by_cont
 
 ## `ggplot2` revisited
 
-For aggregated data, use `geom_col`
+For aggregated data, use `geom_col`.  (A dynamite plot is also shown.)
 
-```{r fig.height=4.5}
+```{r fig.height=3}
 ggplot(data = max_exp_1997_by_cont, 
        mapping = aes(x = continent, y = max_exp)) +
-  geom_col() +
+  geom_col(fill = "red") +
   geom_errorbar(mapping = aes(ymin = max_exp - sd_exp,
                               ymax = max_exp + sd_exp), 
                 color = "blue", width = 0.2)
@@ -1902,8 +1902,10 @@ class: middle
 # Thanks for attending!
 
 <!--
-- [Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
+Workshop Feedback Form](https://goo.gl/forms/EOEYWAd8jg04QVf72)
 -->
+- Email us if you'd like to chat further during USCOTS or later
+    - [chester@moderndive.com](mailto:chester@moderndive.com) / [albert@moderndive.com](mailto:albert@moderndive.com)
 - [Source code for ModernDive](https://github.com/ismayc/moderndiver-book)
     - Feel free to modify the book as you wish for your own needs! Just please list the authors as "Chester Ismay, Albert Y. Kim, and YOU!"
 - These slides available at <http://bit.ly/uscots2017-slides>
